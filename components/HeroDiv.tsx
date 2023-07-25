@@ -6,9 +6,17 @@ interface DivProps {
   custom: string;
   rounded: string;
   flex?: string;
+  custom2: string;
 }
 
-const HeroDiv = ({ source, title, custom, rounded, flex }: DivProps) => {
+const HeroDiv = ({
+  source,
+  title,
+  custom,
+  rounded,
+  flex,
+  custom2,
+}: DivProps) => {
   return (
     <div className={`md:absolute  ${custom} third-div   cursor-pointer`}>
       {/* top-[15%] right-0 */}
@@ -16,7 +24,7 @@ const HeroDiv = ({ source, title, custom, rounded, flex }: DivProps) => {
         className={`flex items-center ${flex}   w-[250px] lg:w-[400px] lg:h-[100px]  h-[80px] p-8 shadow-xl  ${rounded}  third-bg-div`}
       >
         <div
-          className={`h-[50px] flex justify-center  glass w-[50px] mr-8 rounded-xl`}
+          className={`h-[50px] flex justify-center ${custom2}  glass w-[50px] rounded-xl`}
         >
           <Image
             src={source}

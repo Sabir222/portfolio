@@ -1,36 +1,39 @@
+import Header from "@/components/Header";
 import Image from "next/image";
-import Link from "next/link";
 import getRepos from "@/app/api/getRepos";
 import { DataProps } from "@/app/api/getRepos";
-const Github = async () => {
-  const repos = await getRepos();
-  const filteredRepo = repos.filter((repo: DataProps) => {
-    return repo.name.toLowerCase().startsWith("alx");
-  });
 
+const page = async () => {
+  const repos = await getRepos();
   return (
     <>
+      <Header
+        firstp=" What i study"
+        secondp="Welcome to my page documenting my studies in the ALX Africa Software Engineering Intensive Program! By day, I delve into ALX courses, while at night, I passionately pursue personal projects. Join me on this exhilarating journey of learning and creation!"
+      />
       <section className="my-20 max-w-[1400px] mx-auto ">
-        <div className=" px-[32px]  mb-6 ">
-          <h1 className="text-3xl font-semibold text-white ">Studies</h1>
+        <div className=" px-[32px]  mb-6">
+          <h1 className="text-3xl font-semibold text-white ">
+            Studies / Side Projects
+          </h1>
         </div>
-        <main className=" flex flex-col md:flex-row text-white   px-[32px] ">
-          <div className="md:w-[80%]   md:grid grid-cols-1 md:grid-cols-3 gap-3 ">
-            {filteredRepo.map((repo: DataProps) => {
+        <main className=" flex flex-col md:flex-row text-white  px-[32px] ">
+          <div className="grid-cols-1 gap-3 md:grid md:grid-cols-3">
+            {repos.map((repo: DataProps) => {
               const shortenedCreatedAt = repo.created_at.slice(0, 10);
               return (
                 <>
                   <div className="bg-zinc-700 bg-opacity-40 mb-5 md:mb-0  h-[200px] flex flex-col justify-between p-[16px]  rounded-md">
                     <div className="h-[60%] ">
                       <p className="pb-2 text-sm font-light text-blue-400">
-                        {repo.language}
+                        {repo.language ?? "No language detected"}
                       </p>
                       <p className="pb-2 text-lg font-bold truncate">
                         {repo.name}
                       </p>
                       <div className="">
                         <div className="text-[10px] font-semibold mb-5  truncate  ">
-                          {repo.description}
+                          {repo.description ?? 'No Description'}
                         </div>
                       </div>
 
@@ -43,7 +46,7 @@ const Github = async () => {
                             src="/star1.png"
                             height={2}
                             width={18}
-                            alt="star"
+                            alt=""
                           />
                           <p className="text-sm font-light">
                             {repo.stargazers_count}
@@ -68,19 +71,10 @@ const Github = async () => {
               );
             })}
           </div>
-          <div className="md:w-[20%] flex p-10 justify-center items-center">
-            <div className="animation-div2 rounded-2xl">
-              <Link href="/studies">
-                <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] bg-zinc-700">
-                  More
-                </button>
-              </Link>
-            </div>
-          </div>
         </main>
       </section>
     </>
   );
 };
 
-export default Github;
+export default page;

@@ -19,6 +19,7 @@ const Hero = () => {
             rounded="md:rounded-l-xl"
             custom=" top-[15%] right-0"
             flex=""
+            custom2=" mr-6 ml-3"
           />
           <HeroDiv
             source="about.svg"
@@ -26,6 +27,7 @@ const Hero = () => {
             rounded="md:rounded-l-xl"
             custom=" top-[55%] right-0"
             flex=""
+            custom2=" mr-6 ml-3 "
           />
           <HeroDiv
             source="socials.svg"
@@ -33,6 +35,7 @@ const Hero = () => {
             rounded="md:rounded-r-xl"
             custom=" top-[15%] left-0"
             flex="justify-end"
+            custom2="md:order-2 md:ml-6 mr-6 "
           />
           <HeroDiv
             source="contact.svg"
@@ -40,6 +43,7 @@ const Hero = () => {
             rounded="md:rounded-r-xl"
             custom=" top-[55%] left-0"
             flex="justify-end"
+            custom2="md:order-2 md:ml-6 mr-6 "
           />
         </div>
       </div>

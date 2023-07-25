@@ -16,7 +16,7 @@ const Header = ({ firstp, secondp }: headerProps) => {
       <button className="absolute flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4">
         <Image src={"/sunny.png"} alt="logo" width={20} height={20} />
       </button>
-      <div className="p-5 bg-slate-100 bg-opacity-10 md:rounded-xl">
+      <div className="p-5 bg-slate-100 bg-opacity-10 max-w-[1400px] md:rounded-xl">
         <Image src={"/logo.png"} alt="logo" width={30} height={30} />
         <p className="mb-4 text-2xl font-bold text-white">{firstp}</p>
         <p className="mb-3 text-gray-200">{secondp}</p>
