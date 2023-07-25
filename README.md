@@ -1,11 +1,9 @@
-My Personal Portfolio - Developer Portfolio
-Portfolio Preview
-
+Sabir KOUTABI - Developer Portfolio
 Introduction
-Hello there! Welcome to my personal portfolio. I'm thrilled to present my journey as a developer and showcase some of the projects I've been working on. My name is [Your Name], and I'm a passionate developer who loves building web applications using TypeScript, Next.js 13, Tailwind CSS, and CSS. This README.md provides an overview of my portfolio and the various sections you'll find here.
+Hello there! Welcome to my personal portfolio. I'm thrilled to present my journey as a developer and showcase some of the projects I've been working on. My name is Sabir KOUTABI, and I'm a passionate developer who loves building web applications using TypeScript, Next.js 13, Tailwind CSS, and CSS. This README.md provides an overview of my portfolio and the various sections you'll find here.
 
-Live Link
-Visit my live portfolio
+Live Portfolio
+🚀 Visit My Live Portfolio
 
 Technologies Used
 TypeScript: I believe in the power of strong typing and how TypeScript enhances code quality and developer productivity.
@@ -18,8 +16,6 @@ Home: The home section welcomes visitors and provides an introduction to who I a
 About Me: In this section, you'll get to know me better - my background, interests, and skills.
 
 Projects: This section showcases some of the projects I've worked on. Each project will have a brief description and a link to its GitHub repository or live demo.
-
-Experience: Here, you'll find details about my professional experience and the companies I've worked with.
 
 Contact: If you'd like to get in touch with me, the contact section provides my email address and links to my social media profiles.
 
