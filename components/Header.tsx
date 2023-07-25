@@ -9,7 +9,7 @@ const Header = ({ firstp, secondp }: headerProps) => {
     <div className="h-[50vh] p-6 relative  animation-div flex justify-start md:justify-center items-center ">
       <Link href="/">
         <div className="absolute cursor-pointer top-4 left-4">
-          <Image src={"/tree.png"} alt="logo" width={40} height={40} />
+          <Image src={"/tree.png"} alt="logo" width={40} height={40} style={{ width: 40, height: 40 }} />
         </div>
       </Link>
 

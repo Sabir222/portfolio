@@ -24,6 +24,7 @@ const HeroDiv = ({ source, title, custom, rounded, flex }: DivProps) => {
             width={30}
             height={30}
             className="text-white"
+            // style={{ width: 30, height: 30 }}
           />
         </div>
         <div className="shadow-xl rounded-2xl third-bg-div">
