@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="md:h-[50vh] p-5 md:p-0 h-auto bg-[#EEEEEE] flex flex-col justify-center items-center gap-3  relative second-div">
           <HeroDiv
             source="work.svg"
-            title="Work"
+            title="Projects"
             rounded="md:rounded-l-xl"
             custom=" top-[15%] right-0"
             flex=""
