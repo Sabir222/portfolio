@@ -1,11 +1,12 @@
-Sabir KOUTABI - Developer Portfolio
-Introduction
+#Sabir KOUTABI - Developer Portfolio
+
+##Introduction
 Hello there! Welcome to my personal portfolio. I'm thrilled to present my journey as a developer and showcase some of the projects I've been working on. My name is Sabir KOUTABI, and I'm a passionate developer who loves building web applications using TypeScript, Next.js 13, Tailwind CSS, and CSS. This README.md provides an overview of my portfolio and the various sections you'll find here.
 
-Live Portfolio
+##Live Portfolio
 🚀 Visit My Live Portfolio
 
-Technologies Used
+##Technologies Used
 TypeScript: I believe in the power of strong typing and how TypeScript enhances code quality and developer productivity.
 Next.js 13: Next.js provides a fantastic framework for building server-rendered React applications with ease.
 Tailwind CSS: For designing stunning and responsive UI components, I utilize Tailwind CSS - a utility-first CSS framework.
