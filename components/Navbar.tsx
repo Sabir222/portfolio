@@ -33,11 +33,11 @@ const Navbar = () => {
     <>
       <MobileNav visible={isVisible} Click={handleClick} />
       <nav
-        className={`  ease-in-out duration-500  px-[32px] z-20 fixed  top-0 left-0 right-0 h-16   ${
+        className={`  ease-in-out duration-500   z-20 fixed  top-0 left-0 right-0 h-16   ${
           scrolled ? "bg-black/40 backdrop-blur-md " : "bg-transparent "
         }  `}
       >
-        <div className="max-w-[1400px] mx-auto items-center justify-between flex pt-2">
+        <div className="max-w-[1400px] px-[32px] mx-auto items-center justify-between flex pt-2">
           <div className="">
             <Link href="/">
               <div className="cursor-pointer top-4 left-4">
