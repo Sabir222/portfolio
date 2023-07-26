@@ -13,7 +13,7 @@ const Hero = () => {
           possibilities. Happy to collaborate as a web developer."
         />
         <div className="md:h-[50vh] p-5 md:p-0 h-auto bg-[#EEEEEE] flex flex-col justify-center items-center gap-3  relative second-div">
-          <HeroDiv
+          {/* <HeroDiv
             source="work.svg"
             title="Projects"
             rounded="md:rounded-l-xl"
@@ -44,7 +44,7 @@ const Hero = () => {
             custom=" top-[55%] left-0"
             flex="justify-end"
             custom2="md:order-2 md:ml-6 mr-6 "
-          />
+          /> */}
         </div>
       </div>
     </div>
