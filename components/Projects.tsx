@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import CarWebsite from "/public/carrental.png";
-import MovieWebsite from "/public/moviescreenshot.png";
+import CarWebsite from "@/public/carrental.png";
+import MovieWebsite from "@/public/moviescreenshot.png";
 const projects = [
   {
     name: "MovieApp",
