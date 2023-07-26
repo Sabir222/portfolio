@@ -1,17 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-
+import CarWebsite from "../public/carrental.png";
+import MovieWebsite from "../public/moviescreenshot.png";
 const projects = [
   {
     name: "MovieApp",
     url: "https://movie-swart-five.vercel.app/",
-    src: "/moviescreenshot.png",
+    src: MovieWebsite,
   },
   {
     name: "Car Rental",
     url: "https://car-rental-eta-pearl.vercel.app/",
-    src: "/carrental.png",
+    src: CarWebsite,
   },
 ];
 
@@ -31,7 +32,7 @@ const Projects = () => {
               >
                 <div className="bg-black h-[85%] relative  ">
                   <Image
-                    src={`${project.src}`}
+                    src={project.src}
                     objectFit="cover"
                     alt="img"
                     layout="fill"
@@ -55,10 +56,10 @@ const Projects = () => {
             );
           })}
         </div>
-        <div className="md:w-20% flex p-10 justify-center items-center">
+        <div className="md:w-[20%] flex p-10 justify-center items-center">
           <div className="animation-div2 rounded-2xl">
             <Link href="/studies">
-              <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] text-white bg-zinc-700">
+              <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] bg-zinc-700">
                 More
               </button>
             </Link>
