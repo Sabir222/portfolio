@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import { useEffect, useState } from "react";
 interface VisibleProps {
   visible: boolean;
@@ -21,9 +21,18 @@ const MobileNav = ({ visible, Click }: VisibleProps) => {
     >
       <div className="rounded-lg flex justify-center items-center  bg-zinc-800 p-11 h-[400px]">
         <ul className="flex flex-col gap-16 text-xl text-center text-white">
-          <li>Work</li>
-          <li>About</li>
-          <li>Contact</li>
+          <Link href="/">
+            <li>Home</li>
+          </Link>
+          <Link href="/studies">
+            <li>Projects</li>
+          </Link>
+          <Link href="/about">
+            <li>About</li>
+          </Link>
+          <Link href="/contact">
+            <li>Contact</li>
+          </Link>
         </ul>
       </div>
     </div>

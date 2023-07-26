@@ -2,49 +2,19 @@
 import HeroDiv from "./HeroDiv";
 import Header from "./Header";
 import Image from "next/image";
+import Projects from "./Projects";
 
 const Hero = () => {
   return (
-    <div>
-      <div className="h-[100vh] flex flex-col overflow-hidden ">
+    <div className="">
+      <div className="flex flex-col ">
         <Header
           firstp="Hello, I'm Sabir Welcome to my Webiste"
           secondp="Self-taught web developer with a passion for creativity and endless
           possibilities. Happy to collaborate as a web developer."
         />
-        <div className="md:h-[50vh] p-5 md:p-0 h-auto bg-[#EEEEEE] flex flex-col justify-center items-center gap-3  relative second-div">
-          {/* <HeroDiv
-            source="work.svg"
-            title="Projects"
-            rounded="md:rounded-l-xl"
-            custom=" top-[15%] right-0"
-            flex=""
-            custom2=" mr-6 ml-3"
-          />
-          <HeroDiv
-            source="about.svg"
-            title="About"
-            rounded="md:rounded-l-xl"
-            custom=" top-[55%] right-0"
-            flex=""
-            custom2=" mr-6 ml-3 "
-          />
-          <HeroDiv
-            source="socials.svg"
-            title="Socials"
-            rounded="md:rounded-r-xl"
-            custom=" top-[15%] left-0"
-            flex="justify-end"
-            custom2="md:order-2 md:ml-6 mr-6 "
-          />
-          <HeroDiv
-            source="contact.svg"
-            title="Contact"
-            rounded="md:rounded-r-xl"
-            custom=" top-[55%] left-0"
-            flex="justify-end"
-            custom2="md:order-2 md:ml-6 mr-6 "
-          /> */}
+        <div className="h-full   bg-[#EEEEEE] pb-[80px]">
+          <Projects />
         </div>
       </div>
     </div>

@@ -53,9 +53,18 @@ const Navbar = () => {
           </div>
           <div>
             <ul className="hidden gap-10 text-white md:flex">
-              <li>Work</li>
-              <li>About</li>
-              <li>Contact</li>
+              <Link href="/">
+                <li>Home</li>
+              </Link>
+              <Link href="/studies">
+                <li>Projects</li>
+              </Link>
+              <Link href="/about">
+                <li>About</li>
+              </Link>
+              <Link href="/contact">
+                <li>Contact</li>
+              </Link>
             </ul>
           </div>
           <div>
