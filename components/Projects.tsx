@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import { log } from "console";
 
 const projects = [
   {
@@ -26,7 +25,10 @@ const Projects = () => {
         <div className=" md:grid md:grid-cols-3 px-[32px] gap-3 md:w-[80%] ">
           {projects.map((project, key) => {
             return (
-              <div className="flex flex-col bg-zinc-700 h-[400px] mb-8 md:mb-0  " key={key}>
+              <div
+                className="flex flex-col bg-zinc-700 h-[400px] mb-8 md:mb-0  "
+                key={key}
+              >
                 <div className="bg-black h-[85%] relative  ">
                   <Image
                     src={project.src}
