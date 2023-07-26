@@ -36,6 +36,7 @@ const Projects = () => {
                     objectFit="cover"
                     alt="img"
                     layout="fill"
+                    placeholder="blur"
                   />
                   <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-zinc-700 to-transparent from-10% to-100%"></div>
                 </div>
