@@ -31,7 +31,7 @@ const Projects = () => {
               >
                 <div className="bg-black h-[85%] relative  ">
                   <Image
-                    src={`"${project.src}"`}
+                    src={`${project.src}`}
                     objectFit="cover"
                     alt="img"
                     layout="fill"
