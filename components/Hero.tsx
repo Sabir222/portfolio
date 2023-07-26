@@ -11,7 +11,7 @@ const Hero = () => {
         <Header
           firstp="Hello, I'm Sabir Welcome to my Webiste"
           secondp="Self-taught web developer with a passion for creativity and endless
-          possibilities. Happy to collaborate as a web developer."
+          possibilities. Happy to collaborate as a Front-end web developer."
         />
         <div className="h-full   bg-[#EEEEEE] pb-[80px]">
           <Projects />

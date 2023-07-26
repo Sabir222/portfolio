@@ -11,6 +11,9 @@ const Header = ({ firstp, secondp }: headerProps) => {
         <Image src={"/logo.png"} alt="logo" width={30} height={30} />
         <p className="mb-4 text-2xl font-bold text-white">{firstp}</p>
         <p className="mb-3 text-gray-200">{secondp}</p>
+        <button className="flex text-white animation-div2 self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] bg-zinc-700 cursor-pointer ">
+          Hire Me
+        </button>
       </div>
     </div>
   );

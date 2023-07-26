@@ -58,7 +58,7 @@ const Projects = () => {
           })}
         </div>
         <div className="md:w-[20%] flex p-10 justify-center items-center">
-          <div className="animation-div2 rounded-2xl">
+          <div className="text-white animation-div2 rounded-2xl">
             <Link href="/studies">
               <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] bg-zinc-700">
                 More

@@ -1,19 +1,16 @@
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
-import Head from "next/head";
-const Contact = () => {
+import Contact from "@/components/Contact";
+const page = () => {
   return (
     <>
-      <Head>
-        <title>Contact Sabir</title>
-        <meta name="Contact-page" content="page" key="contact" />
-      </Head>
-      <Navbar/>
+      <Navbar />
       <div>
         <Header firstp="Reach Out and Let's Chat!" />
+        <Contact />
       </div>
     </>
   );
 };
 
-export default Contact;
+export default page;
