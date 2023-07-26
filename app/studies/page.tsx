@@ -2,11 +2,13 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import getRepos from "@/app/api/getRepos";
 import { DataProps } from "@/app/api/getRepos";
+import Navbar from "@/components/Navbar";
 
 const page = async () => {
   const repos = await getRepos();
   return (
     <>
+      <Navbar />
       <Header
         firstp=" What i study"
         secondp="Welcome to my page documenting my studies in the ALX Africa Software Engineering Intensive Program! By day, I delve into ALX courses, while at night, I passionately pursue personal projects. Join me on this exhilarating journey of learning and creation!"
@@ -33,7 +35,7 @@ const page = async () => {
                       </p>
                       <div className="">
                         <div className="text-[10px] font-semibold mb-5  truncate  ">
-                          {repo.description ?? 'No Description'}
+                          {repo.description ?? "No Description"}
                         </div>
                       </div>
 
