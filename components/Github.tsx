@@ -14,8 +14,8 @@ const Github = async () => {
         <div className=" px-[32px]  mb-6 ">
           <h1 className="text-3xl font-semibold text-white ">Studies</h1>
         </div>
-        <main className=" flex flex-col md:flex-row text-white   px-[32px] ">
-          <div className="md:w-[80%]   md:grid grid-cols-1 md:grid-cols-3 gap-3 ">
+        <main className="flex flex-col text-white md:flex-row">
+          <div className="md:w-[80%]  px-[32px]  md:grid grid-cols-1 md:grid-cols-3 gap-3 ">
             {filteredRepo.map((repo: DataProps) => {
               const shortenedCreatedAt = repo.created_at.slice(0, 10);
               return (
