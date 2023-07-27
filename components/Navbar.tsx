@@ -1,7 +1,6 @@
 "use client";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineMenu } from "react-icons/ai";
 import MobileNav from "@/components/MobileNav";
-import { IoSunnyOutline } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -75,9 +74,11 @@ const Navbar = () => {
               >
                 <AiOutlineMenu className="text-white" />
               </button>
-              <button className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4">
-                <IoSunnyOutline className="text-white" />
-              </button>
+              <a href="https://github.com/Sabir222/portfolio" target="_blank">
+                <button className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4">
+                  <AiOutlineGithub className="text-white" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
