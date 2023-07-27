@@ -3,16 +3,19 @@ import Image from "next/image";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import CarWebsite from "../public/carwebsite.png";
 import MovieWebsite from "../public/moviewebsite.png";
+import { AiOutlineGithub } from "react-icons/ai";
 const projects = [
   {
     name: "MovieApp",
     url: "https://movie-swart-five.vercel.app/",
     src: MovieWebsite,
+    github: "https://github.com/Sabir222/Movie",
   },
   {
     name: "Car Rental",
     url: "https://car-rental-eta-pearl.vercel.app/",
     src: CarWebsite,
+    github: "https://github.com/Sabir222/car-rental",
   },
 ];
 
@@ -42,6 +45,14 @@ const Projects = () => {
                 </div>
                 <div className="h-[15%] text-white p-4 flex justify-between items-center">
                   <div>{project.name}</div>
+                  <div>
+                    {" "}
+                    <a href={project.github} target="_blank">
+                      <button className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4">
+                        <AiOutlineGithub className="text-white" />
+                      </button>
+                    </a>
+                  </div>
                   <div className="">
                     <a
                       href={project.url}
