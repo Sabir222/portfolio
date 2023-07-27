@@ -12,14 +12,14 @@ const Footer = () => {
         <div className="flex items-center order-2 gap-4 text-white ">
           <Link href="/contact">Contact</Link>
           <a href="https://github.com/Sabir222" target="_blank">
-            <AiOutlineGithub />
+            <AiOutlineGithub size={30} />
           </a>
 
           <a href="https://twitter.com/sabirkoutabi" target="_blank">
-            <AiOutlineTwitter />
+            <AiOutlineTwitter size={30} />
           </a>
           <a href="https://www.linkedin.com/in/skoutabi/" target="_blank">
-            <AiOutlineLinkedin />
+            <AiOutlineLinkedin size={30} />
           </a>
         </div>
         <div className="flex flex-col items-start text-white o md:items-center md:order-1">

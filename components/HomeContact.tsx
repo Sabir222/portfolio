@@ -11,7 +11,8 @@ const HomeContact = () => {
           <div className="md:w-[50%] flex justify-center text-center items-center text-white">
             <p>
               Interested in hiring a skilled web developer for your company?
-              Contact me to explore how I can contribute to your team&apos;s success.
+              Contact me to explore how I can contribute to your team&apos;s
+              success.<br></br> Email: mrsabir4@gmail.com
             </p>
           </div>
           <div className="flex-1">

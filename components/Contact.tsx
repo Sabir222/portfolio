@@ -3,22 +3,33 @@ import { z, ZodType } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 interface FormProps {
+  //we cant do   type FormSchemaType = z.infer<typeof schema>;
+
   fullName: string;
   email: string;
   message: string;
 }
+
 const Contact = () => {
   const schema: ZodType<FormProps> = z.object({
-    fullName: z.string().min(2).max(30),
+    fullName: z
+      .string()
+      .min(2, " Full Name must contain at least 2 character(s"),
     email: z.string().email(),
-    message: z.string(),
+    message: z.string().min(1, "Don't be shy write something!"),
   });
 
-  const { register, handleSubmit } = useForm<FormProps>({
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormProps>({
     resolver: zodResolver(schema),
   });
   const submitData = (data: FormProps) => {
     console.log("Nice!", data);
+    reset();
   };
   return (
     <>
@@ -29,6 +40,9 @@ const Contact = () => {
             onSubmit={handleSubmit(submitData)}
           >
             <label htmlFor=""> Full Name</label>
+            {errors.fullName && (
+              <span className="text-red-300">{errors.fullName.message}</span>
+            )}
             <input
               type="text"
               className="py-2 pl-4 bg-black rounded-md "
@@ -36,6 +50,9 @@ const Contact = () => {
               {...register("fullName")}
             />
             <label htmlFor=""> Email</label>
+            {errors.email && (
+              <span className="text-red-300">{errors.email.message}</span>
+            )}
             <input
               type="email"
               className="py-2 pl-4 bg-black rounded-md"
@@ -43,6 +60,9 @@ const Contact = () => {
               {...register("email")}
             />
             <label htmlFor="">Message</label>
+            {errors.message && (
+              <span className="text-red-300">{errors.message.message}</span>
+            )}
             <textarea
               cols={20}
               rows={10}
