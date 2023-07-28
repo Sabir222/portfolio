@@ -6,7 +6,7 @@ import MovieWebsite from "../public/moviewebsite.png";
 import { AiOutlineGithub } from "react-icons/ai";
 const projects = [
   {
-    name: "MovieApp",
+    name: "Movie App",
     url: "https://movie-swart-five.vercel.app/",
     src: MovieWebsite,
     github: "https://github.com/Sabir222/Movie",
@@ -43,7 +43,7 @@ const Projects = () => {
                   />
                   <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-zinc-700 to-transparent from-10% to-100%"></div>
                 </div>
-                <div className="h-[15%] text-white p-4 flex justify-between items-center">
+                <div className="h-[15%] text-white p-4 flex justify-between items-center md:text-[10px] lg:text-[16px]">
                   <div>{project.name}</div>
                   <div>
                     {" "}
