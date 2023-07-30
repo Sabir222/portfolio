@@ -3,6 +3,7 @@ import Image from "next/image";
 import getRepos from "@/app/api/getRepos";
 import { DataProps } from "@/app/api/getRepos";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const page = async () => {
   const repos = await getRepos();
@@ -13,7 +14,7 @@ const page = async () => {
         firstp=" What i study"
         secondp="Welcome to my page documenting my studies in the ALX Africa Software Engineering Intensive Program! By day, I delve into ALX courses, while at night, I passionately pursue personal projects. Join me on this exhilarating journey of learning and creation!"
       />
-      <section className="my-20 max-w-[1400px] mx-auto ">
+      <section className="my-20 max-w-[1400px] mx-auto mb-[100px] ">
         <div className=" px-[32px]  mb-6">
           <h1 className="text-3xl font-semibold text-white ">
             Studies / Side Projects
@@ -75,6 +76,7 @@ const page = async () => {
           </div>
         </main>
       </section>
+      <Footer />
     </>
   );
 };
