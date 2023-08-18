@@ -9,6 +9,7 @@ const Hero = () => {
     <div className="">
       <div className="flex flex-col ">
         <Header
+          contact=""
           firstp="Hello, I'm Sabir Welcome to my Webiste"
           secondp="Self-taught web developer with a passion for creativity and endless
           possibilities. Happy to collaborate as a Front-end web developer."
