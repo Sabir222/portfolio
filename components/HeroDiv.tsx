@@ -32,11 +32,10 @@ const HeroDiv = ({
             width={30}
             height={30}
             className="text-white"
-            // style={{ width: 30, height: 30 }}
           />
         </div>
         <div className="shadow-xl rounded-2xl third-bg-div">
-          <div className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] bg-zinc-700">
+          <div className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] ">
             <h1 className="text-xl text-center text-white rounded-2xl">
               {title}
             </h1>

@@ -1,21 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import CarWebsite from "../public/carwebsite.png";
 import MovieWebsite from "../public/moviewebsite.png";
+import Crypto from "../public/crypto.png";
 import { AiOutlineGithub } from "react-icons/ai";
 const projects = [
+  {
+    name: "Crypto Tracker",
+    url: "https://crypto-tracker-2-six.vercel.app/",
+    src: Crypto,
+    github: "https://github.com/Sabir222/crypto-tracker",
+  },
   {
     name: "Movie App",
     url: "https://movie-swart-five.vercel.app/",
     src: MovieWebsite,
     github: "https://github.com/Sabir222/Movie",
-  },
-  {
-    name: "Car Rental",
-    url: "https://car-rental-eta-pearl.vercel.app/",
-    src: CarWebsite,
-    github: "https://github.com/Sabir222/car-rental",
   },
 ];
 
@@ -23,17 +23,20 @@ const Projects = () => {
   return (
     <div className="flex flex-col mt-[80px] max-w-[1400px] mx-auto">
       <div className=" px-[32px] mb-6">
-        <h1 className="text-3xl font-semibold text-black ">Projects</h1>
+        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">
+          Projects
+        </h1>
       </div>
       <div className="flex flex-col gap-10 md:flex-row">
-        <div className=" md:grid md:grid-cols-3 px-[32px] gap-3 md:w-[80%] ">
+        <div className=" md:grid md:grid-cols-3 px-[32px]  gap-3 md:w-[80%]  ">
           {projects.map((project, key) => {
             return (
               <div
-                className="flex flex-col bg-zinc-700 h-[400px] mb-8 md:mb-0  "
+                className="flex flex-col backdrop-blur-sm bg-zinc-600/30 dark:bg-zinc-700 h-[400px] mb-8 md:mb-0  shadow-lg hover:shadow-zinc-700 ease-in-out duration-500 "
                 key={key}
               >
-                <div className="bg-black h-[85%] relative  ">
+                <div className="h-[15%] "></div>
+                <div className="bg-black h-[65%] relative  ">
                   <Image
                     src={project.src}
                     objectFit="cover"
@@ -41,9 +44,8 @@ const Projects = () => {
                     layout="fill"
                     placeholder="blur"
                   />
-                  <div className="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-zinc-700 to-transparent from-10% to-100%"></div>
                 </div>
-                <div className="h-[15%] text-white p-4 flex justify-between items-center md:text-[10px] lg:text-[16px]">
+                <div className="h-[15%] dark:text-white text-gray-800 p-4 flex justify-between items-center md:text-[10px] lg:text-[16px]">
                   <div>{project.name}</div>
                   <div>
                     {" "}
@@ -71,7 +73,7 @@ const Projects = () => {
         <div className="md:w-[20%] flex p-10 justify-center items-center">
           <div className="text-white animation-div2 rounded-2xl">
             <Link href="/studies">
-              <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] bg-zinc-700">
+              <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] ">
                 More
               </button>
             </Link>

@@ -13,7 +13,7 @@ const Hero = () => {
           secondp="Self-taught web developer with a passion for creativity and endless
           possibilities. Happy to collaborate as a Front-end web developer."
         />
-        <div className="h-full   bg-[#EEEEEE] pb-[80px]">
+        <div className="h-full  bg-[#EEEEEE] pb-[80px]">
           <Projects />
         </div>
       </div>

@@ -9,8 +9,8 @@ import {
 } from "react-icons/bi";
 const Skills = () => {
   return (
-    <div>
-      <div className="flex items-center justify-center gap-3 md:gap-10 px-[32px] py-20 text-white">
+    <div className="">
+      <div className="flex items-center justify-center gap-3 md:gap-10 px-[32px] py-20 dark:bg-black text-gray-800 dark:text-white duration-700">
         <GrReactjs size={50} />
         <BiLogoTypescript size={50} />
         <TbBrandNextjs size={50} />

@@ -9,7 +9,7 @@ export interface DataProps {
 const getRepos = async (): Promise<any> => {
   const response = await fetch("https://api.github.com/users/sabir222/repos", {
     next: {
-      revalidate: 60,
+      revalidate: 5,
     },
   });
 

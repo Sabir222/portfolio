@@ -4,6 +4,7 @@ import MobileNav from "@/components/MobileNav";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import ThemeButton from "./ThemeButton";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -68,17 +69,18 @@ const Navbar = () => {
           </div>
           <div>
             <div className="flex gap-2">
+              <ThemeButton />
+              <a href="https://github.com/Sabir222/portfolio" target="_blank">
+                <button className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4">
+                  <AiOutlineGithub className="text-white" />
+                </button>
+              </a>
               <button
                 className="flex items-center justify-center w-8 h-8 rounded-full md:hidden bg-zinc-100 bg-opacity-10 top-4 right-4"
                 onClick={handleClick}
               >
                 <AiOutlineMenu className="text-white" />
               </button>
-              <a href="https://github.com/Sabir222/portfolio" target="_blank">
-                <button className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4">
-                  <AiOutlineGithub className="text-white" />
-                </button>
-              </a>
             </div>
           </div>
         </div>

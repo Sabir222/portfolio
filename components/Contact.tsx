@@ -33,10 +33,10 @@ const Contact = () => {
   };
   return (
     <>
-      <div className=" text-white p-[32px]  ">
+      <div className=" dark:text-white text-gray-800 p-[32px]  ">
         <div className="max-w-[1000px] mx-auto">
           <form
-            className="flex flex-col gap-2 p-4 bg-opacity-70 rounded-xl bg-zinc-700"
+            className="flex flex-col gap-2 p-4 backdrop-blur-sm bg-white/30 rounded-xl"
             onSubmit={handleSubmit(submitData)}
           >
             <label htmlFor=""> Full Name</label>
@@ -45,7 +45,7 @@ const Contact = () => {
             )}
             <input
               type="text"
-              className="py-2 pl-4 bg-black rounded-md "
+              className="py-2 pl-4 rounded-md dark:bg-black "
               placeholder="John Wick"
               {...register("fullName")}
             />
@@ -55,7 +55,7 @@ const Contact = () => {
             )}
             <input
               type="email"
-              className="py-2 pl-4 bg-black rounded-md"
+              className="py-2 pl-4 rounded-md dark:bg-black"
               placeholder="John-wick@continentalhotel.com"
               {...register("email")}
             />
@@ -66,13 +66,14 @@ const Contact = () => {
             <textarea
               cols={20}
               rows={10}
-              className="p-4 bg-black rounded-md"
+              className="p-4 rounded-md dark:bg-black"
               placeholder="Write your message here."
               {...register("message")}
             ></textarea>
             <input
               type="submit"
-              className="flex animation-div2 self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] bg-zinc-700 cursor-pointer"
+              value="Send"
+              className="flex animation-div2 self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px]  cursor-pointer text-white"
             />
           </form>
         </div>
