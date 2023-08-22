@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col mt-[80px] max-w-[1400px] mx-auto">
       <div className=" px-[32px] mb-6">
-        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">
+        <h1 className="text-3xl font-semibold text-gray-800 ">
           Projects
         </h1>
       </div>
@@ -71,7 +71,7 @@ const Projects = () => {
         </div>
         <div className="md:w-[20%] flex p-10 justify-center items-center">
           <div className="text-white animation-div3 rounded-2xl">
-            <Link href="/studies">
+            <Link href="/projects">
               <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] ">
                 More
               </button>

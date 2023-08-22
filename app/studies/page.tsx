@@ -9,12 +9,12 @@ import Footer from "@/components/Footer";
 const page = async () => {
   const repos = await getRepos();
   return (
-    <>
+    <div>
       <Navbar />
       <Header
         firstp=" What i study"
         contact=""
-        secondp="Welcome to my page documenting my studies in the ALX Africa Software Engineering Intensive Program! By day, I delve into ALX courses, while at night, I passionately pursue personal projects. Join me on this exhilarating journey of learning and creation!"
+        secondp="Welcome to my page documenting my studies in the ALX Africa Software Engineering Intensive Program!."
       />
       <section className="py-20  pb-[100px] dark:bg-black duration-700 ">
         <div className="max-w-[1400px] mx-auto">
@@ -81,7 +81,7 @@ const page = async () => {
         </div>
       </section>
       <Footer />
-    </>
+    </div>
   );
 };
 

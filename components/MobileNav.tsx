@@ -19,12 +19,15 @@ const MobileNav = ({ visible, Click }: VisibleProps) => {
       }   top-0 bottom-0 left-0 right-0 z-30 px-16 pt-16 pt bg-black/40 buttom-0`}
       onClick={Click}
     >
-      <div className="rounded-lg flex justify-center items-center  bg-zinc-800 p-11 h-[400px]">
+      <div className="rounded-lg flex justify-center items-center  bg-zinc-800 p-11 h-[500px]">
         <ul className="flex flex-col gap-16 text-xl text-center text-white">
           <Link href="/">
             <li>Home</li>
           </Link>
           <Link href="/studies">
+            <li>Studies</li>
+          </Link>
+          <Link href="/projects">
             <li>Projects</li>
           </Link>
           <Link href="/about">
