@@ -12,7 +12,6 @@ const Github = async () => {
     <>
       <section className="py-20 duration-700 dark:bg-black">
         <div className="max-w-[1400px] mx-auto">
-          {" "}
           <div className=" px-[32px]  mb-6 ">
             <h1 className="text-3xl font-semibold text-gray-800 dark:text-white ">
               Studies
@@ -57,7 +56,7 @@ const Github = async () => {
                           <p className="text-sm">{shortenedCreatedAt}</p>
                         </div>
                         <a href={repo.html_url} target="_blank">
-                          <button className="w-8 h-8 bg-[#07284b] rounded-md flex justify-center items-center">
+                          <button className="w-8 h-8 bg-[#07284b]  rounded-md flex justify-center items-center">
                             <Image
                               src="/arrow.png"
                               width={20}
@@ -73,7 +72,7 @@ const Github = async () => {
               })}
             </div>
             <div className="md:w-[20%] flex p-10 justify-center items-center">
-              <div className="animation-div2 rounded-2xl">
+              <div className="animation-div3 rounded-2xl">
                 <Link href="/studies">
                   <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] text-white">
                     More

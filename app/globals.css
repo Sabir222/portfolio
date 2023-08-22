@@ -55,8 +55,8 @@
 .animation-div3 {
   background-image: linear-gradient(45deg, #8a2387, #e94057, #f27121);
 
-  background-size: 200%;
-  animation: bg-animation 10s infinite alternate;
+  background-size: 110%;
+  animation: bg-animation 4s infinite alternate;
 }
 
 .animation-div2 {

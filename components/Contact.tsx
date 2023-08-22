@@ -73,7 +73,7 @@ const Contact = () => {
             <input
               type="submit"
               value="Send"
-              className="flex animation-div2 self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px]  cursor-pointer text-white"
+              className="flex animation-div3 self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px]  cursor-pointer text-white"
             />
           </form>
         </div>

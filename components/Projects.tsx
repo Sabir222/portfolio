@@ -32,7 +32,7 @@ const Projects = () => {
           {projects.map((project, key) => {
             return (
               <div
-                className="flex flex-col backdrop-blur-sm bg-zinc-600/30 dark:bg-zinc-700 h-[400px] mb-8 md:mb-0  shadow-lg hover:shadow-zinc-700 ease-in-out duration-500 "
+                className="flex flex-col backdrop-blur-sm bg-opacity-70  animation-div3 h-[400px] mb-8 md:mb-0  shadow-lg hover:shadow-zinc-700 ease-in-out duration-500 "
                 key={key}
               >
                 <div className="h-[15%] "></div>
@@ -45,10 +45,9 @@ const Projects = () => {
                     placeholder="blur"
                   />
                 </div>
-                <div className="h-[15%] dark:text-white text-gray-800 p-4 flex justify-between items-center md:text-[10px] lg:text-[16px]">
+                <div className="h-[15%] text-white p-4 flex justify-between items-center md:text-[10px] lg:text-[16px]">
                   <div>{project.name}</div>
                   <div>
-                    {" "}
                     <a href={project.github} target="_blank">
                       <button className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4">
                         <AiOutlineGithub className="text-white" />
@@ -71,7 +70,7 @@ const Projects = () => {
           })}
         </div>
         <div className="md:w-[20%] flex p-10 justify-center items-center">
-          <div className="text-white animation-div2 rounded-2xl">
+          <div className="text-white animation-div3 rounded-2xl">
             <Link href="/studies">
               <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] ">
                 More
