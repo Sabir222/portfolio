@@ -9,7 +9,6 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  console.log(isVisible);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +38,7 @@ const Navbar = () => {
       >
         <div className="max-w-[1400px] px-[32px] mx-auto items-center justify-between flex pt-2">
           <div className="">
-            <Link href="/">
+            <Link href="/" >
               <div className="cursor-pointer top-4 left-4">
                 <Image
                   src={"/tree.png"}

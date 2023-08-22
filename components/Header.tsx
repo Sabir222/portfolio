@@ -1,12 +1,29 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { AiOutlineArrowDown } from "react-icons/ai";
 interface headerProps {
   firstp: string;
   secondp?: string;
   contact: string;
 }
 const Header = ({ firstp, secondp, contact }: headerProps) => {
+  const [scrollOpacity, setScrollOpacity] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const maxScroll = 100; // Adjust this value for the fade effect
+      const opacity = 1 - scrollY / maxScroll;
+      setScrollOpacity(opacity < 0 ? 0 : opacity);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
       className={`h-[100vh] sm:h-[50vh] p-6   animation-div flex justify-start md:justify-center items-center  relative animation-div`}
@@ -22,6 +39,12 @@ const Header = ({ firstp, secondp, contact }: headerProps) => {
             Contact
           </button>
         </Link>
+      </div>
+      <div
+        className="absolute bottom-4 sm:hidden left-[50%] flex items-center justify-center w-8 h-8 rounded-full animation-div3"
+        style={{ opacity: scrollOpacity }}
+      >
+        <AiOutlineArrowDown />
       </div>
     </div>
   );
