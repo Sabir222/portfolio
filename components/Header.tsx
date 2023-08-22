@@ -14,7 +14,7 @@ const Header = ({ firstp, secondp, contact }: headerProps) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const maxScroll = 100; // Adjust this value for the fade effect
+      const maxScroll = 500; // Adjust this value for the fade effect
       const opacity = 1 - scrollY / maxScroll;
       setScrollOpacity(opacity < 0 ? 0 : opacity);
     };
