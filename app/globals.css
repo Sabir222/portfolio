@@ -77,3 +77,11 @@
 .scrolled {
   background-color: white;
 }
+
+.icon {
+  transition: transform 1.25s; /* Smooth transition for rotation */
+}
+
+.icon:hover {
+  transform: rotate(360deg); /* Rotate 360 degrees on hover */
+}

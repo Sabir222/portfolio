@@ -13,7 +13,7 @@ const ThemeButton = () => {
   }
   return (
     <button
-      className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4"
+      className="flex items-center justify-center w-8 h-8 rounded-full icon bg-zinc-100 bg-opacity-10 top-4 right-4"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
       {resolvedTheme === "dark" ? (
@@ -26,6 +26,4 @@ const ThemeButton = () => {
 };
 
 export default ThemeButton;
-{
-  /* <button className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4"></button> */
-}
+
