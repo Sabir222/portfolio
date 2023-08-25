@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { Loader2 } from "lucide-react";
+
 interface FormProps {
   //we cant do   type FormSchemaType = z.infer<typeof schema>;
 
@@ -100,11 +102,13 @@ const Contact = () => {
               placeholder="Write your message here."
               {...register("message")}
             ></textarea>
-            <input
-              type="submit"
-              value={loading ? "Sending" : "Send"}
+
+            <button
               className="flex animation-div3 self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px]  cursor-pointer text-white"
-            />
+              type="submit"
+            >
+              {loading ? <Loader2 className=" animate-spin" /> : "Send"}
+            </button>
           </form>
         </div>
       </div>
