@@ -2,6 +2,7 @@
 import { z, ZodType } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 interface FormProps {
   //we cant do   type FormSchemaType = z.infer<typeof schema>;
 
@@ -27,10 +28,28 @@ const Contact = () => {
   } = useForm<FormProps>({
     resolver: zodResolver(schema),
   });
-  const submitData = (data: FormProps) => {
+  const submitData = async (data: FormProps) => {
     console.log("Nice!", data);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
+
+      if (res.ok) {
+        console.log("yaaaay!");
+      }
+    } catch (err) {
+      console.log("this is an error idiot try to fixe it", err);
+    }
+
     reset();
   };
+
   return (
     <>
       <div className=" dark:text-white text-gray-800 p-[32px]  ">
