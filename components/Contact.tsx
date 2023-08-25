@@ -3,6 +3,7 @@ import { z, ZodType } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
+import toast from "react-hot-toast";
 interface FormProps {
   //we cant do   type FormSchemaType = z.infer<typeof schema>;
 
@@ -12,6 +13,7 @@ interface FormProps {
 }
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const schema: ZodType<FormProps> = z.object({
     fullName: z
       .string()
@@ -29,7 +31,7 @@ const Contact = () => {
     resolver: zodResolver(schema),
   });
   const submitData = async (data: FormProps) => {
-    console.log("Nice!", data);
+    setLoading(true);
 
     try {
       const res = await fetch("/api/contact", {
@@ -41,9 +43,18 @@ const Contact = () => {
       });
 
       if (res.ok) {
-        console.log("yaaaay!");
+        setLoading(false);
+        toast.success("Email sent", {
+          icon: "👏",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
       }
     } catch (err) {
+      toast.error("Message not sent please try again!");
       console.log("this is an error idiot try to fixe it", err);
     }
 
@@ -91,7 +102,7 @@ const Contact = () => {
             ></textarea>
             <input
               type="submit"
-              value="Send"
+              value={loading ? "Sending" : "Send"}
               className="flex animation-div3 self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px]  cursor-pointer text-white"
             />
           </form>
