@@ -41,7 +41,7 @@ const Header = ({ firstp, secondp, contact }: headerProps) => {
         </Link>
       </div>
       <div
-        className="absolute bottom-4 text-white sm:hidden left-[50%] flex items-center justify-center w-8 h-8 rounded-full animation-div3"
+        className="absolute bottom-20 text-white sm:hidden left-[50%] flex items-center justify-center w-8 h-8 rounded-full animation-div3"
         style={{ opacity: scrollOpacity }}
       >
         <AiOutlineArrowDown />
