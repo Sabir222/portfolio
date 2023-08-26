@@ -65,8 +65,8 @@ export async function POST(request: Request) {
 <body>
     <h1>Thank You for Your Message</h1>
     <p>Dear ${fullName},</p>
-    <p>i have received your message and appreciate your interest.</p>
-    <p>We will get back to you as soon as possible.</p>
+    <p>I have received your message and appreciate your interest.</p>
+    <p>I will get back to you as soon as possible.</p>
     <p>Best regards,</p>
     <p>Sabir KOUTABI</p>
     <p><strong>Your Details:</strong></p>
