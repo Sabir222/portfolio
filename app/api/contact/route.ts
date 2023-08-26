@@ -26,9 +26,58 @@ export async function POST(request: Request) {
       replyTo: email,
       subject: `Contact form submission from ${fullName} `,
       html: `
-        <p>Name: ${fullName}</p>
-        <p>Email: ${email}</p>
-        <p>Message: ${message} </p>
+       <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Submission</title>
+</head>
+<body>
+    <h1>Contact Form Submission</h1>
+    <p><strong>Name:</strong> ${fullName}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Message:</strong></p>
+    <p>${message}</p>
+</body>
+</html>
+
+      `,
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  // sending a message back
+  try {
+    const mail2 = await transporter.sendMail({
+      from: user,
+      to: email,
+      replyTo: email,
+      subject: `Thank you for your message Dear ${fullName} `,
+      html: `
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Message</title>
+</head>
+<body>
+    <h1>Thank You for Your Message</h1>
+    <p>Dear ${fullName},</p>
+    <p>i have received your message and appreciate your interest.</p>
+    <p>We will get back to you as soon as possible.</p>
+    <p>Best regards,</p>
+    <p>Sabir KOUTABI</p>
+    <p><strong>Your Details:</strong></p>
+    <p><strong>Name:</strong> ${fullName}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Message:</strong></p>
+    <p>${message}</p>
+   
+</body>
+</html>
+
       `,
     });
   } catch (error) {
@@ -37,5 +86,5 @@ export async function POST(request: Request) {
 
   console.log("api log", email, fullName, message);
 
-  return NextResponse.json({ email });
+  return NextResponse.json({ status: 200 });
 }
