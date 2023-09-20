@@ -3,8 +3,15 @@ import Image from "next/image";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import MovieWebsite from "../public/moviewebsite.png";
 import Crypto from "../public/crypto.png";
+import RealEstate from "../public/realestate.png";
 import { AiOutlineGithub } from "react-icons/ai";
 const projects = [
+  {
+    name: "Real Estate Website",
+    url: "https://real-estate-phi-three.vercel.app/",
+    src: RealEstate,
+    github: "https://github.com/Sabir222/real-estate",
+  },
   {
     name: "Crypto Tracker",
     url: "https://crypto-tracker-2-six.vercel.app/",
@@ -23,9 +30,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col mt-[80px] max-w-[1400px] mx-auto">
       <div className=" px-[32px] mb-6">
-        <h1 className="text-3xl font-semibold text-gray-800 ">
-          Projects
-        </h1>
+        <h1 className="text-3xl font-semibold text-gray-800 ">Projects</h1>
       </div>
       <div className="flex flex-col gap-10 md:flex-row">
         <div className=" md:grid md:grid-cols-3 px-[32px]  gap-3 md:w-[80%]  ">

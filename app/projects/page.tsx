@@ -2,12 +2,19 @@ import Footer from "@/components/Footer";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
+import RealEstate from "../../public/realestate.png";
 import MovieWebsite from "../../public/moviewebsite.png";
 import Crypto from "../../public/crypto.png";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { AiOutlineGithub } from "react-icons/ai";
 
 const projects = [
+  {
+    name: "Real Estate Website",
+    url: "https://real-estate-phi-three.vercel.app/",
+    src: RealEstate,
+    github: "https://github.com/Sabir222/real-estate",
+  },
   {
     name: "Crypto Tracker",
     url: "https://crypto-tracker-2-six.vercel.app/",
