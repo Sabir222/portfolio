@@ -19,7 +19,7 @@ const TheModal = () => {
   return (
     <div>
       <div className="justify-end text-sm text-gray-500 mdfont-semibold ">
-        Show curriculums
+        Show curriculum
         <button
           onClick={onOpen}
           className="text-[12px] text-white rounded-sm animation-div3 m-2 p-[2px]"
