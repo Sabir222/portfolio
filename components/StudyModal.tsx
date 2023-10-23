@@ -9,8 +9,8 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@nextui-org/react";
-import Cur1 from "@/public/cur1.png";
-import Cur2 from "@/public/cur2.png";
+import Cur1 from "../public/cur1.png";
+import Cur2 from "../public/cur2.png";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const TheModal = () => {
