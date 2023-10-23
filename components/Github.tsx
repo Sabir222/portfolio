@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import getRepos from "@/app/api/getRepos";
 import { DataProps } from "@/app/api/getRepos";
+import TheModal from "./StudyModal";
 const Github = async () => {
   const repos = await getRepos();
   const filteredRepo = repos.filter((repo: DataProps) => {
@@ -12,10 +13,11 @@ const Github = async () => {
     <>
       <section className="py-20 duration-700 dark:bg-black">
         <div className="max-w-[1400px] mx-auto">
-          <div className=" px-[32px]  mb-6 ">
-            <h1 className="text-3xl font-semibold text-gray-800 dark:text-white ">
+          <div className=" px-[32px] flex  gap-10 mb-6 items-end ">
+            <div className="text-3xl font-semibold text-gray-800 dark:text-white ">
               Studies
-            </h1>
+            </div>
+            <TheModal />
           </div>
           <main className="flex flex-col text-gray-800 dark:text-white md:flex-row">
             <div className="md:w-[80%]  px-[32px]  md:grid grid-cols-1 md:grid-cols-3 gap-3 ">

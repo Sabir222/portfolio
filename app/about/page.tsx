@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import TheModal from "@/components/StudyModal";
+
 const page = () => {
   return (
     <div>
