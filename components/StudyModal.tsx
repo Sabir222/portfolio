@@ -11,7 +11,7 @@ import {
 } from "@nextui-org/react";
 
 import Curr1 from "../public/cur1.png";
-import Curr2 from "../public/cur2.png"
+import Curr2 from "../public/cur2.png";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const TheModal = () => {
@@ -45,11 +45,19 @@ const TheModal = () => {
               </ModalHeader>
               <ModalBody>
                 <div>
-                  <Image src={Curr1} alt="img" placeholder="blur" />
                   <Image
-                    src={Curr2}
+                    src="/cur1.png"
+                    width={7750}
+                    height={550}
+                    objectFit="fill"
                     alt="img"
-                    placeholder="blur"
+                  />
+                  <Image
+                    src="/cur1.png"
+                    width={7750}
+                    height={550}
+                    objectFit="fill"
+                    alt="img"
                     className="mt-4"
                   />
                 </div>
