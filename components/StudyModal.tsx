@@ -45,21 +45,8 @@ const TheModal = () => {
               </ModalHeader>
               <ModalBody>
                 <div>
-                  <Image
-                    src="/cur1.png"
-                    width={7750}
-                    height={550}
-                    objectFit="fill"
-                    alt="img"
-                  />
-                  <Image
-                    src="/cur1.png"
-                    width={7750}
-                    height={550}
-                    objectFit="fill"
-                    alt="img"
-                    className="mt-4"
-                  />
+                  <Image src={Curr1} alt="img" />
+                  <Image src={Curr2} alt="img" className="mt-4" />
                 </div>
               </ModalBody>
               <ModalFooter>
