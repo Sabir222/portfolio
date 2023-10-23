@@ -9,8 +9,9 @@ import {
   ModalFooter,
   useDisclosure,
 } from "@nextui-org/react";
-import Cur1 from "../public/cur1.png";
-import Cur2 from "@/public/cur2.png";
+
+import Curr1 from "@/public/cur1.png";
+import Curr2 from "../public/cur2.png"
 import { AiOutlinePlus } from "react-icons/ai";
 
 const TheModal = () => {
@@ -44,9 +45,9 @@ const TheModal = () => {
               </ModalHeader>
               <ModalBody>
                 <div>
-                  <Image src={Cur1} alt="img" placeholder="blur" />
+                  <Image src={Curr1} alt="img" placeholder="blur" />
                   <Image
-                    src={Cur2}
+                    src={Curr2}
                     alt="img"
                     placeholder="blur"
                     className="mt-4"
