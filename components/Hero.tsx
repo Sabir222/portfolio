@@ -1,7 +1,5 @@
 "use client";
-import HeroDiv from "./HeroDiv";
 import Header from "./Header";
-import Image from "next/image";
 import Projects from "./Projects";
 
 const Hero = () => {
@@ -14,9 +12,8 @@ const Hero = () => {
           secondp="Self-taught web developer with a passion for creativity and endless
           possibilities. Happy to collaborate as a Front-end web developer."
         />
-        <div className="h-full duration-300 dark:bg-[#EADBC8] bg-[#EEEEEE] pb-[80px]">
-          <Projects />
-        </div>
+        {/* <div className="h-full duration-300 dark:bg-[#EADBC8] bg-[#EEEEEE] pb-[80px]">
+        </div> */}
       </div>
     </div>
   );

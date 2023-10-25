@@ -3,8 +3,10 @@ import Link from "next/link";
 import {
   AiOutlineGithub,
   AiOutlineLinkedin,
-  AiOutlineTwitter,
+  
 } from "react-icons/ai";
+import { RiTwitterXLine } from "react-icons/ri";
+
 const Footer = () => {
   return (
     <footer className="bg-[#EEEEEE] dark:bg-zinc-800">
@@ -13,7 +15,7 @@ const Footer = () => {
           <Link href="/contact">Contact</Link>
           <a href="https://twitter.com/sabirkoutabi" target="_blank">
             <button className="flex items-center justify-center w-8 h-8 duration-300 ease-in-out rounded-full bg-zinc-100 dark:bg-opacity-10 top-4 right-4 hover:bg-slate-400">
-              <AiOutlineTwitter
+              <RiTwitterXLine
                 size={20}
                 className="text-gray-800 dark:text-white"
               />
