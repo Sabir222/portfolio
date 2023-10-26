@@ -12,11 +12,13 @@ const Socials = () => {
             <div className=" dark:text-white">
               <BsCloudDownload size={70} />
             </div>
-            <a download="My Resume.pdf" href="My Resume.pdf" target="_blank">
-              <button className="w-[100px] py-2 text-white rounded animation-div3">
-                Download
-              </button>
-            </a>
+            <div>
+              <a download="My Resume.pdf" href="My Resume.pdf" target="_blank">
+                <button className="w-[100px] py-2 text-white rounded animation-div3">
+                  Download
+                </button>
+              </a>
+            </div>
           </div>
           <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4 ">
             <h1 className="text-xl font-semibold dark:text-white">

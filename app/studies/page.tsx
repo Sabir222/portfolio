@@ -1,10 +1,10 @@
-
 import Header from "@/components/Header";
 import Image from "next/image";
 import getRepos from "@/app/api/getRepos";
 import { DataProps } from "@/app/api/getRepos";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import TheModal from "@/components/StudyModal";
 
 const page = async () => {
   const repos = await getRepos();
@@ -18,10 +18,11 @@ const page = async () => {
       />
       <section className="py-20  pb-[100px] dark:bg-black duration-700 ">
         <div className="max-w-[1400px] mx-auto">
-          <div className=" px-[32px]  mb-6">
+          <div className=" px-[32px]  mb-6 sm:flex gap-4 items-end">
             <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">
               Studies / Side Projects
             </h1>
+            <TheModal />
           </div>
           <main className=" flex flex-col md:flex-row dark:text-white text-gray-800  px-[32px] ">
             <div className="grid-cols-1 gap-3 md:grid md:grid-cols-3">
