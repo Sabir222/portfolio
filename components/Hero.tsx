@@ -3,6 +3,7 @@ import Header from "./Header";
 import Projects from "./Projects";
 
 const Hero = () => {
+  //
   return (
     <div className="">
       <div className="flex flex-col ">
