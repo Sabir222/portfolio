@@ -62,7 +62,7 @@ const Contact = () => {
 
     reset();
   };
-
+  //
   return (
     <>
       <div className=" dark:text-white text-gray-800 p-[32px]  ">
