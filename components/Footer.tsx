@@ -7,7 +7,7 @@ const Footer = () => {
   const date = new Date().getFullYear();
   return (
     <footer className="bg-[#EEEEEE] dark:bg-zinc-800">
-      <div className="  md:h-[100px] gap-10 pt-[40px] md:py-0 md:gap-0 flex md:flex-row flex-col justify-between px-[32px] items-start md:items-center max-w-[1400px] mx-auto">
+      <div className="  md:h-[200px] gap-10 pt-[40px] md:py-0 md:gap-0 flex md:flex-row flex-col justify-between px-[32px] items-start md:items-center max-w-[1400px] mx-auto">
         <div className="flex items-center order-2 gap-4 text-gray-800 dark:text-white ">
           <a href="https://twitter.com/sabirkoutabi" target="_blank">
             <button className="flex items-center justify-center w-8 h-8 duration-300 ease-in-out rounded-full bg-zinc-100 dark:bg-opacity-10 top-4 right-4 hover:bg-slate-400">
@@ -34,7 +34,7 @@ const Footer = () => {
             </button>
           </a>
         </div>
-        <div className="flex flex-col items-start text-gray-800 dark:text-white md:items-center md:order-1 md:hidden">
+        <div className="flex flex-col items-start text-gray-800 dark:text-white md:items-center md:order-1 ">
           <Image src="/tree.png" alt="" height={40} width={40} />
           <p className="mt-6 duration-700"> Lets Work Together.</p>
         </div>
@@ -52,10 +52,6 @@ const Footer = () => {
       </div>
 
       <div className="pb-10 max-w-[1400px] mx-auto   text-center flex flex-col justify-center items-center gap-4">
-        <div className="flex-col items-start hidden text-gray-800 md:flex dark:text-white md:items-center">
-          <Image src="/tree.png" alt="" height={40} width={40} />
-          <p className="mt-6 duration-700"> Lets Work Together.</p>
-        </div>
         Copyright © 2022-{date} Sabir Koutabi
       </div>
     </footer>
