@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
 
       <div className="pb-10 max-w-[1400px] mx-auto   text-center flex flex-col justify-center items-center gap-4">
-        Copyright © 2022-{date} Sabir Koutabi
+        Copyright ©{date} Sabir Koutabi
       </div>
     </footer>
   );
