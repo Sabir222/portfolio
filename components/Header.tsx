@@ -26,7 +26,7 @@ const Header = ({ firstp, secondp, contact }: headerProps) => {
   }, []);
   return (
     <div
-      className={`h-[100vh] sm:h-[550px] p-6   flex justify-start md:justify-center items-center  relative animation-div4 px-[32px]`}
+      className={`h-[100vh] sm:h-[550px] p-6   flex justify-start md:justify-center items-center  relative gradient-background2 px-[32px]`}
     >
       <div className="p-5 bg-slate-100/10  backdrop-blur-sm max-w-[1400px] md:rounded-xl ">
         <Image src={"/logo.png"} alt="logo" width={30} height={30} />
@@ -34,14 +34,14 @@ const Header = ({ firstp, secondp, contact }: headerProps) => {
         <p className="mb-3 text-gray-200">{secondp}</p>
         <Link href="/contact">
           <button
-            className={`flex text-white animation-div3 self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px]  cursor-pointer ${contact} `}
+            className={`flex text-white gradient-background self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px]  cursor-pointer ${contact} `}
           >
             Contact
           </button>
         </Link>
       </div>
       {/* <div
-        className="absolute bottom-40 text-white sm:hidden left-[50%] flex items-center justify-center w-8 h-8 rounded-full animation-div3"
+        className="absolute bottom-40 text-white sm:hidden left-[50%] flex items-center justify-center w-8 h-8 rounded-full gradient-background"
         style={{ opacity: scrollOpacity }}
       >
         <AiOutlineArrowDown />

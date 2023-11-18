@@ -75,7 +75,7 @@ const Github = async () => {
               })}
             </div>
             <div className="md:w-[20%] flex p-10 justify-center items-center">
-              <div className="animation-div3 rounded-2xl">
+              <div className="gradient-background rounded-2xl">
                 <Link href="/studies">
                   <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] text-white">
                     More

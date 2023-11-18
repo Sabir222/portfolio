@@ -72,12 +72,12 @@ const Navbar = () => {
             <div className="flex gap-2">
               <ThemeButton />
               <a href="https://github.com/Sabir222/portfolio" target="_blank">
-                <button className="flex items-center justify-center w-8 h-8 rounded-full animation-div3 bg-opacity-10 top-4 right-4">
+                <button className="flex items-center justify-center w-8 h-8 rounded-full gradient-background bg-opacity-10 top-4 right-4">
                   <AiOutlineGithub className="text-white" />
                 </button>
               </a>
               <button
-                className="flex items-center justify-center w-8 h-8 rounded-full hover:animation-div3 md:hidden bg-zinc-100 bg-opacity-10 top-4 right-4"
+                className="flex items-center justify-center w-8 h-8 rounded-full hover:gradient-background md:hidden bg-zinc-100 bg-opacity-10 top-4 right-4"
                 onClick={handleClick}
               >
                 <AiOutlineMenu className="text-white" />

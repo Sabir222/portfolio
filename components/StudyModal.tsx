@@ -22,7 +22,7 @@ const TheModal = () => {
         Show curriculum
         <button
           onClick={onOpen}
-          className="text-[12px] text-white rounded-sm animation-div3 m-2 p-[2px]"
+          className="text-[12px] text-white rounded-sm gradient-background m-2 p-[2px]"
         >
           <AiOutlinePlus />
         </button>
@@ -58,7 +58,10 @@ const TheModal = () => {
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button className="text-white animation-div3" onPress={onClose}>
+                <Button
+                  className="text-white gradient-background"
+                  onPress={onClose}
+                >
                   <a
                     href="https://www.alxafrica.com/software-engineering-plus/"
                     target="_blank"

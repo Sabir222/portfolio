@@ -104,7 +104,7 @@ const Contact = () => {
             ></textarea>
 
             <button
-              className="flex animation-div3 self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px]  cursor-pointer text-white"
+              className="flex gradient-background self-end  items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px]  cursor-pointer text-white"
               type="submit"
             >
               {loading ? <Loader2 className=" animate-spin" /> : "Send"}

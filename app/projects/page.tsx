@@ -41,14 +41,16 @@ const page = () => {
       <div className="duration-300 bg-white dark:bg-black">
         <div className="flex flex-col pt-[80px] pb-[80px] max-w-[1400px] mx-auto">
           <div className=" px-[32px] mb-6">
-            <h1 className="text-3xl font-semibold text-gray-800 dark:text-white ">Projects</h1>
+            <h1 className="text-3xl font-semibold text-gray-800 dark:text-white ">
+              Projects
+            </h1>
           </div>
           <div className="flex flex-col gap-10 md:flex-row">
             <div className=" md:grid md:grid-cols-3 px-[32px]  gap-3 md:w-[100%]  ">
               {projects.map((project, key) => {
                 return (
                   <div
-                    className="flex flex-col backdrop-blur-sm bg-opacity-70  animation-div3 h-[400px] mb-8 md:mb-0  shadow-lg hover:shadow-zinc-700 ease-in-out duration-500 "
+                    className="flex flex-col backdrop-blur-sm bg-opacity-70  gradient-background h-[400px] mb-8 md:mb-0  shadow-lg hover:shadow-zinc-700 ease-in-out duration-500 "
                     key={key}
                   >
                     <div className="h-[15%] "></div>

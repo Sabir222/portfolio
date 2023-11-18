@@ -12,34 +12,33 @@ body {
   background-color: #fbfdfb;
 }
 
+/* Dark/light  theme */
 [data-theme="dark"] {
   --background: black;
   --foreground: white;
 }
 
-.glass {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.25),
-    rgba(255, 255, 255, 0)
-  );
-  backdrop-filter: blur(80px);
+/* Theme icon animation */
+.icon {
+  transition: transform 1.25s;
+}
+.icon:hover {
+  transform: rotate(360deg);
 }
 
-.animation-div3 {
+/* Background animation*/
+.gradient-background {
   background-image: linear-gradient(45deg, #8a2387, #e94057, #f27121);
 
   background-size: 110%;
-  animation: bg-animation 4s infinite alternate;
 }
-
-.animation-div4 {
+.gradient-background2 {
   background-image: linear-gradient(45deg, #020024, #07284b, #034c74, #00749b);
   background-size: 600% 600%;
-  animation: bg-animation2 35s infinite ease;
+  animation: bg-animation 35s infinite ease;
 }
 
-@keyframes bg-animation2 {
+@keyframes bg-animation {
   0% {
     background-position: 0% 50%;
   }
@@ -51,18 +50,7 @@ body {
   }
 }
 
-.scrolled {
-  background-color: white;
-}
-
-.icon {
-  transition: transform 1.25s; /* Smooth transition for rotation */
-}
-
-.icon:hover {
-  transform: rotate(360deg); /* Rotate 360 degrees on hover */
-}
-
+/* scroll bar */
 @supports (scrollbar-color: #48494b #bebdb8) {
   * {
     scrollbar-color: #48494b #bebdb8;
@@ -83,3 +71,6 @@ body {
   border-radius: 100vw;
   border: 1.7px solid #bebdb8;
 }
+
+/* skills gradient background */
+

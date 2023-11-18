@@ -14,7 +14,7 @@ const Socials = () => {
             </div>
             <div>
               <a download="My Resume.pdf" href="My Resume.pdf" target="_blank">
-                <button className="w-[100px] py-2 text-white rounded animation-div3">
+                <button className="w-[100px] py-2 text-white rounded gradient-background">
                   Download
                 </button>
               </a>
@@ -28,7 +28,7 @@ const Socials = () => {
               <BsLinkedin size={70} />
             </div>
             <a href="https://www.linkedin.com/in/skoutabi/" target="_blank">
-              <button className="w-[100px] py-2 text-white rounded animation-div3">
+              <button className="w-[100px] py-2 text-white rounded gradient-background">
                 LinkedIn
               </button>
             </a>
@@ -39,7 +39,7 @@ const Socials = () => {
               <BsGithub size={70} />
             </div>
             <a href="https://github.com/Sabir222" target="_blank">
-              <button className="w-[100px] py-2 text-white rounded animation-div3">
+              <button className="w-[100px] py-2 text-white rounded gradient-background">
                 GitHub
               </button>
             </a>
@@ -52,7 +52,7 @@ const Socials = () => {
               <RiTwitterXLine size={70} />
             </div>
             <a href="https://twitter.com/sabirkoutabi" target="_blank">
-              <button className="w-[100px] py-2 text-white rounded animation-div3">
+              <button className="w-[100px] py-2 text-white rounded gradient-background">
                 Twitter
               </button>
             </a>

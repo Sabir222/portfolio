@@ -38,7 +38,7 @@ const Projects = () => {
             {projects.map((project, key) => {
               return (
                 <div
-                  className="flex flex-col backdrop-blur-sm bg-opacity-70  animation-div3 h-[400px] mb-8 md:mb-0  shadow-lg hover:shadow-zinc-700 ease-in-out duration-500 "
+                  className="flex flex-col backdrop-blur-sm bg-opacity-70  gradient-background h-[400px] mb-8 md:mb-0  shadow-lg hover:shadow-zinc-700 ease-in-out duration-500 "
                   key={key}
                 >
                   <div className="h-[15%] "></div>
@@ -76,7 +76,7 @@ const Projects = () => {
             })}
           </div>
           <div className="md:w-[20%] flex p-10 justify-center items-center">
-            <div className="text-white animation-div3 rounded-2xl">
+            <div className="text-white gradient-background rounded-2xl">
               <Link href="/projects">
                 <button className="flex items-center justify-center p-4 rounded-2xl bg-opacity-70 h-[50px] w-[100px] ">
                   More
