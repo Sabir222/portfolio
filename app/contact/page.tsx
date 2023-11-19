@@ -2,6 +2,15 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Sabir KOUTABI",
+  description: "Sabir Koutabi's contact page",
+  icons: {
+    icon: "/tree.png",
+  },
+};
 const page = () => {
   return (
     <div>

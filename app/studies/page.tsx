@@ -5,7 +5,15 @@ import { DataProps } from "@/app/api/getRepos";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TheModal from "@/components/StudyModal";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Studies",
+  description: "Sabir Koutabi's studies",
+  icons: {
+    icon: "/tree.png",
+  },
+};
 const page = async () => {
   const repos = await getRepos();
   return (

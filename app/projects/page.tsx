@@ -7,6 +7,15 @@ import MovieWebsite from "../../public/moviewebsite.png";
 import Crypto from "../../public/crypto.png";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
 import { AiOutlineGithub } from "react-icons/ai";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description: "Sabir Koutabi's projects",
+  icons: {
+    icon: "/tree.png",
+  },
+};
 
 const projects = [
   {
