@@ -7,6 +7,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Sabir KOUTABI",
   description: "Sabir Koutabi's contact page",
+  alternates: {
+    canonical: `https://sabirkoutabi.dev/contact`,
+  },
   icons: {
     icon: "/tree.png",
   },

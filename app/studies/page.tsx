@@ -10,6 +10,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Studies",
   description: "Sabir Koutabi's studies",
+  alternates: {
+    canonical: `https://sabirkoutabi.dev/studies`,
+  },
   icons: {
     icon: "/tree.png",
   },

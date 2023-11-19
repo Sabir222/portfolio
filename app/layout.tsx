@@ -9,6 +9,13 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sabir KOUTABI",
   description: "Sabir Koutabi's Portfolio",
+  alternates: {
+    canonical: `https://sabirkoutabi.dev/`,
+  },
+  verification: {
+    google:
+      "google-site-verification=aW_5U8OJIYmw1ZL1owu2K9jdh6CbvnqMRfn3qb14WT8",
+  },
   icons: {
     icon: "/tree.png",
   },
