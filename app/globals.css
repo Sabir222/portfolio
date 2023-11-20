@@ -111,3 +111,52 @@ body {
   position: relative;
   z-index: 6;
 }
+
+/* underline */
+
+.highlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #af5412 50%);
+}
+
+.underline-python {
+  background-image: linear-gradient(90deg, #362fd9, #ffc436);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+}
+.underline-typescript {
+  background-image: linear-gradient(90deg, #362fd9, #362fd9);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+}
+.underline-c {
+  background-image: linear-gradient(90deg, #a9a9a9, #a9a9a9);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+}
+.underline-shell {
+  background-image: linear-gradient(90deg, #610c9f, #610c9f);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+}
+.underline-html {
+  background-image: linear-gradient(90deg, #ff6c22, #ff6c22);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+}
+.underline-noLanguage {
+  background-image: linear-gradient(90deg, #ff6c22, #ff6c22);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+}
+.underline-javascript {
+  background-image: linear-gradient(90deg, #ffc436);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+}

@@ -2,7 +2,7 @@ import Contact from "./Contact";
 
 const HomeContact = () => {
   return (
-    <div className="duration-700 dark:bg-zinc-800 bg-[#EEEEEE]">
+    <div className="duration-700 dark:bg-zinc-800 bg-[#EEEEEE] pb-20">
       <div className=" px-[32px] max-w-[1400px] mx-auto ">
         <div className="pt-20 pb-10 text-3xl font-semibold text-gray-800 dark:text-white md:pb-0">
           <p>Contact Me</p>

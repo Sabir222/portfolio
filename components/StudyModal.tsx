@@ -31,10 +31,13 @@ const TheModal = () => {
         isOpen={isOpen}
         onOpenChange={onOpenChange}
         size="2xl"
+        radius="sm"
         scrollBehavior="inside"
-        backdrop="blur"
+        backdrop="opaque"
         classNames={{
           body: "px-6",
+          backdrop:
+            "bg-gradient-to-t from-zinc-900 to-zinc-900/10 backdrop-opacity-20",
         }}
       >
         <ModalContent>

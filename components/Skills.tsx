@@ -15,7 +15,7 @@ const Skills = () => {
     <div className="">
       <div className="  px-[32px] py-20 gradient-background3 text-gray-800 dark:text-white duration-700  overflow-hidden">
         <div className=" gradient-background3Child"></div>
-        <div className="flex items-center justify-center gap-3 md:gap-10 skills-container">
+        <div className="flex items-center justify-center gap-3 text-white md:gap-10 skills-container ">
           <GrReactjs size={50} />
           <BiLogoTypescript size={50} />
           <TbBrandNextjs size={50} />

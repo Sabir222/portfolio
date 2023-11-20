@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" px-[32px]">
-        <hr className="max-w-[1400px] opacity-20 mx-auto mt-10 md:mt-3 mb-10 border-gray-200" />
+        <hr className="max-w-[1400px] opacity-20 mx-auto mt-10 md:mt-3 mb-10 dark:border-gray-200 border-gray-600" />
       </div>
 
       <div className="pb-10 max-w-[1400px] mx-auto   text-center flex flex-col justify-center items-center gap-4">
