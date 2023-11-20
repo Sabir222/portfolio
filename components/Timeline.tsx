@@ -2,10 +2,10 @@ const Timeline = () => {
   return (
     <section className="duration-700 ease-in-out dark:bg-black">
       <div className="max-w-[1400px] mx-auto dark:text-white p-[32px] text-gray-700 ">
-        <div className="md:w-[700px]">
+        <div className="md:w-[700px] lg:w-[1000px]">
           <h1 className="inline-block w-auto text-3xl ">Experience</h1>
           <ul className="mt-6 mb-10">
-            <li className="relative flex items-baseline gap-6 pb-5 ">
+            <li className="relative flex items-baseline gap-6 pb-10 ">
               <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const Timeline = () => {
                 </p>
               </div>
             </li>{" "}
-            <li className="relative flex items-baseline gap-6 pb-5 ">
+            <li className="relative flex items-baseline gap-6 pb-10 ">
               <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const Timeline = () => {
                 </p>
               </div>
             </li>
-            <li className="relative flex items-baseline gap-6 pb-5 ">
+            <li className="relative flex items-baseline gap-6 pb-10 ">
               <div className="before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ const Timeline = () => {
                 </p>
               </div>
             </li>
-            <li className="relative flex items-baseline gap-6 pb-5 ">
+            <li className="relative flex items-baseline gap-6 pb-10 ">
               <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
