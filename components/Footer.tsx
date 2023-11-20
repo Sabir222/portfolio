@@ -6,7 +6,7 @@ import { RiTwitterXLine } from "react-icons/ri";
 const Footer = () => {
   const date = new Date().getFullYear();
   return (
-    <footer className="bg-[#EEEEEE] dark:bg-zinc-800">
+    <footer className="bg-[#EEEEEE] dark:bg-zinc-900">
       <div className="  md:h-[200px] gap-10 pt-[40px] md:py-0 md:gap-0 flex md:flex-row flex-col justify-between px-[32px] items-start md:items-center max-w-[1400px] mx-auto">
         <div className="flex items-center order-2 gap-4 text-gray-800 dark:text-white ">
           <a href="https://twitter.com/sabirkoutabi" target="_blank">
