@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: `https://sabirkoutabi.dev/about`,
   },
   icons: {
-    icon: "/tree.png",
+    icon: "/logo2.png",
   },
 };
 

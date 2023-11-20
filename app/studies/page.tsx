@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: `https://sabirkoutabi.dev/studies`,
   },
   icons: {
-    icon: "/tree.png",
+    icon: "/logo2.png",
   },
 };
 const page = async () => {

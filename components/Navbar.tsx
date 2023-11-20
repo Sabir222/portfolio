@@ -31,7 +31,7 @@ const Navbar = () => {
     <>
       <MobileNav visible={isVisible} Click={handleClick} />
       <nav
-        className={`  z-20 fixed  top-0 left-0 right-0 h-16   ${
+        className={`  z-20 fixed  top-0 left-0 right-0 h-26   ${
           scrolled ? "bg-black/40 backdrop-blur-sm " : "bg-transparent "
         }  `}
       >
@@ -40,11 +40,11 @@ const Navbar = () => {
             <Link href="/">
               <div className="cursor-pointer top-4 left-4">
                 <Image
-                  src={"/tree.png"}
+                  src={"/logo2.png"}
                   alt="logo"
-                  width={40}
-                  height={40}
-                  style={{ width: 40, height: 40 }}
+                  width={1620}               
+                  height={1620}
+                  style={{ width: 75, height: 75 }}
                 />
               </div>
             </Link>

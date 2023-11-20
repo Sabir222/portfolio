@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "google-site-verification=aW_5U8OJIYmw1ZL1owu2K9jdh6CbvnqMRfn3qb14WT8",
   },
   icons: {
-    icon: "/tree.png",
+    icon: "/logo2.png",
   },
 };
 

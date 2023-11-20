@@ -35,7 +35,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col items-start text-gray-800 dark:text-white md:items-center md:order-1 ">
-          <Image src="/tree.png" alt="" height={40} width={40} />
+          <Image src="/logo2.png" alt="" height={70} width={70} />
           <p className="mt-6 duration-700"> Lets Work Together.</p>
         </div>
         <div>
