@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: `https://sabirkoutabi.dev/contact`,
   },
   icons: {
-    icon: "/logo2.png",
+    icon: "/favlogo.png",
   },
 };
 const page = () => {

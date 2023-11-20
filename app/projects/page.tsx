@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: `https://sabirkoutabi.dev/projects`,
   },
   icons: {
-    icon: "/logo2.png",
+    icon: "/favlogo.png",
   },
 };
 
