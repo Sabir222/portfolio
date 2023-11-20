@@ -167,7 +167,7 @@ body {
   background-repeat: no-repeat;
 }
 .underline-javascript {
-  background-image: linear-gradient(90deg, #ffc436);
+  background-image: linear-gradient(90deg, #ffc436, #ffc436);
   background-position: bottom;
   background-size: 100% 30%;
   background-repeat: no-repeat;
