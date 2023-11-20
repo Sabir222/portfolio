@@ -126,10 +126,6 @@ body {
 
 /* underline */
 
-.highlight {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #af5412 50%);
-}
-
 .underline-python {
   background-image: linear-gradient(90deg, #362fd9, #ffc436);
   background-position: bottom;

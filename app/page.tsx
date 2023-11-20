@@ -6,18 +6,17 @@ import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Socials from "@/components/Socials";
-
-
-
+import Timeline from "@/components/Timeline";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
-      <Socials /> 
+      <Socials />
       <Projects />
       <Github />
+      <Timeline />
       <HomeContact />
       <Skills />
       <Footer />

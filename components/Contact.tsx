@@ -71,12 +71,12 @@ const Contact = () => {
             onSubmit={handleSubmit(submitData)}
           >
             <label htmlFor=""> Full Name</label>
-            {errors.fullName && (
+            {errors.fullName && ( 
               <span className="text-red-300">{errors.fullName.message}</span>
             )}
             <input
               type="text"
-              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[0.5px] ring-white"
+              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[1px] ring-white"
               placeholder="John Wick"
               {...register("fullName")}
             />
@@ -86,7 +86,7 @@ const Contact = () => {
             )}
             <input
               type="email"
-              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[0.5px] ring-white"
+              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[1px] ring-white"
               placeholder="John-wick@continentalhotel.com"
               {...register("email")}
             />
@@ -97,7 +97,7 @@ const Contact = () => {
             <textarea
               cols={20}
               rows={10}
-              className="p-4 rounded-md dark:bg-black dark:ring-[0.5px] ring-white "
+              className="p-4 rounded-md dark:bg-black dark:ring-[1px] ring-white "
               placeholder="Write your message here."
               {...register("message")}
             ></textarea>
