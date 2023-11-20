@@ -61,22 +61,22 @@ const Contact = () => {
 
     reset();
   };
-  //
+
   return (
     <>
       <div className=" dark:text-white text-gray-800 p-[32px]   ">
         <div className="max-w-[1000px] mx-auto">
           <form
-            className="flex flex-col gap-2 p-4 dark:bg-black dark:ring-white dark:ring-[0.5px] rounded-xl bg-white/20 md:p-6 shadow-md"
+            className="flex flex-col gap-2 p-4 dark:bg-black dark:ring-gray-500 dark:ring-[0.5px] rounded-xl bg-white/20 md:p-6 shadow-md"
             onSubmit={handleSubmit(submitData)}
           >
             <label htmlFor=""> Full Name</label>
-            {errors.fullName && ( 
+            {errors.fullName && (
               <span className="text-red-300">{errors.fullName.message}</span>
             )}
             <input
               type="text"
-              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[1px] ring-white"
+              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[1px] ring-gray-500"
               placeholder="John Wick"
               {...register("fullName")}
             />
@@ -86,7 +86,7 @@ const Contact = () => {
             )}
             <input
               type="email"
-              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[1px] ring-white"
+              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[1px] ring-gray-500"
               placeholder="John-wick@continentalhotel.com"
               {...register("email")}
             />
@@ -97,7 +97,7 @@ const Contact = () => {
             <textarea
               cols={20}
               rows={10}
-              className="p-4 rounded-md dark:bg-black dark:ring-[1px] ring-white "
+              className="p-4 rounded-md dark:bg-black dark:ring-[1px] ring-gray-500 "
               placeholder="Write your message here."
               {...register("message")}
             ></textarea>
