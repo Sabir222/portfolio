@@ -92,8 +92,20 @@ body {
   top: -30%;
   position: absolute;
   border-radius: 100%;
+  animation: moveGradientBackground 15s infinite linear;
 }
 
+@keyframes moveGradientBackground {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20%, 30%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .gradient-background3:after {
   position: absolute;
   content: "";

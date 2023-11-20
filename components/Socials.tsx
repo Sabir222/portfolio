@@ -5,7 +5,7 @@ const Socials = () => {
     <section className="dark:bg-[#EADBC8] bg-[#EEEEEE]  text-black ">
       <div className=" max-w-[1400px] mx-auto px-[32px] pb-[1200px] relative md:pb-[250px]">
         <div className="absolute left-[32px] right-[32px] p-8 rounded-lg backdrop-blur-sm bg-white/30 top-[-210px] sm:top-[-90px] flex flex-col md:flex-row gap-5 ">
-          <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4 ">
+          <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4  shadow-sm">
             <h1 className="text-xl font-semibold dark:text-white">
               Download CV
             </h1>
@@ -20,7 +20,7 @@ const Socials = () => {
               </a>
             </div>
           </div>
-          <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4 ">
+          <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4 shadow-sm ">
             <h1 className="text-xl font-semibold dark:text-white">
               My LinkedIn
             </h1>
@@ -33,7 +33,7 @@ const Socials = () => {
               </button>
             </a>
           </div>
-          <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4 ">
+          <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4 shadow-sm ">
             <h1 className="text-xl font-semibold dark:text-white">My GitHub</h1>
             <div className=" dark:text-white">
               <BsGithub size={70} />
@@ -44,7 +44,7 @@ const Socials = () => {
               </button>
             </a>
           </div>
-          <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4 ">
+          <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4  shadow-sm">
             <h1 className="text-xl font-semibold dark:text-white">
               My Twitter
             </h1>

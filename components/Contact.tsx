@@ -8,7 +8,6 @@ import { Loader2 } from "lucide-react";
 
 interface FormProps {
   //we cant do   type FormSchemaType = z.infer<typeof schema>;
-
   fullName: string;
   email: string;
   message: string;
@@ -65,10 +64,10 @@ const Contact = () => {
   //
   return (
     <>
-      <div className=" dark:text-white text-gray-800 p-[32px]  ">
+      <div className=" dark:text-white text-gray-800 p-[32px]   ">
         <div className="max-w-[1000px] mx-auto">
           <form
-            className="flex flex-col gap-2 p-4 backdrop-blur-sm bg-white/30 rounded-xl"
+            className="flex flex-col gap-2 p-4 dark:bg-black dark:ring-white dark:ring-[0.5px] rounded-xl bg-white/20 md:p-6 shadow-md"
             onSubmit={handleSubmit(submitData)}
           >
             <label htmlFor=""> Full Name</label>
@@ -77,7 +76,7 @@ const Contact = () => {
             )}
             <input
               type="text"
-              className="py-2 pl-4 rounded-md dark:bg-black "
+              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[0.5px] ring-white"
               placeholder="John Wick"
               {...register("fullName")}
             />
@@ -87,7 +86,7 @@ const Contact = () => {
             )}
             <input
               type="email"
-              className="py-2 pl-4 rounded-md dark:bg-black"
+              className="py-2 pl-4 rounded-md dark:bg-black dark:ring-[0.5px] ring-white"
               placeholder="John-wick@continentalhotel.com"
               {...register("email")}
             />
@@ -98,7 +97,7 @@ const Contact = () => {
             <textarea
               cols={20}
               rows={10}
-              className="p-4 rounded-md dark:bg-black"
+              className="p-4 rounded-md dark:bg-black dark:ring-[0.5px] ring-white "
               placeholder="Write your message here."
               {...register("message")}
             ></textarea>

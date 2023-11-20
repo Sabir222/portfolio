@@ -13,7 +13,7 @@ import { SiGnubash } from "react-icons/si";
 const Skills = () => {
   return (
     <div className="">
-      <div className="  px-[32px] py-20 gradient-background3 text-gray-800 dark:text-white duration-700  overflow-hidden">
+      <div className="  px-[32px] py-20 gradient-background3  text-gray-800 dark:text-white duration-700  overflow-hidden">
         <div className=" gradient-background3Child"></div>
         <div className="flex items-center justify-center gap-3 text-white md:gap-10 skills-container ">
           <GrReactjs size={50} />
