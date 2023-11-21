@@ -40,12 +40,6 @@ const Header = ({ firstp, secondp, contact }: headerProps) => {
           </button>
         </Link>
       </div>
-      {/* <div
-        className="absolute bottom-40 text-white sm:hidden left-[50%] flex items-center justify-center w-8 h-8 rounded-full gradient-background"
-        style={{ opacity: scrollOpacity }}
-      >
-        <AiOutlineArrowDown />
-      </div> */}
     </div>
   );
 };

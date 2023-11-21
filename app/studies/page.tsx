@@ -38,7 +38,7 @@ const page = async () => {
       <section className="py-20  pb-[100px] dark:bg-black duration-700 ">
         <div className="max-w-[1400px] mx-auto">
           <div className=" px-[32px]  mb-6 sm:flex gap-4 items-end">
-            <h1 className="text-3xl font-semibold text-gray-800 dark:text-white">
+            <h1 className="inline text-3xl font-semibold text-gray-800 dark:text-white underline-title">
               Studies / Side Projects
             </h1>
             <TheModal />

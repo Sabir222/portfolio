@@ -2,7 +2,7 @@ import { BsLinkedin, BsGithub, BsCloudDownload } from "react-icons/bs";
 import { RiTwitterXLine } from "react-icons/ri";
 const Socials = () => {
   return (
-    <section className="dark:bg-[#EADBC8] bg-[#EEEEEE]  text-black ">
+    <section className="dark:bg-[#EADBC8] bg-[#EEEEEE] text-black ">
       <div className=" max-w-[1400px] mx-auto px-[32px] pb-[1200px] relative md:pb-[250px]">
         <div className="absolute left-[32px] right-[32px] p-8 rounded-lg backdrop-blur-sm bg-white/30 top-[-210px] sm:top-[-90px] flex flex-col md:flex-row gap-5 ">
           <div className="h-[300px]  ease-in-out duration-300 md:w-[300px] bg-[#fbfdfb] dark:bg-zinc-900 rounded-lg flex flex-col items-center justify-center gap-4  shadow-sm">

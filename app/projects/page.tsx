@@ -53,7 +53,7 @@ const page = () => {
       <div className="duration-300 bg-white dark:bg-black">
         <div className="flex flex-col pt-[80px] pb-[80px] max-w-[1400px] mx-auto">
           <div className=" px-[32px] mb-6">
-            <h1 className="text-3xl font-semibold text-gray-800 dark:text-white ">
+            <h1 className="inline-block text-3xl font-semibold text-gray-800 dark:text-white underline-title">
               Projects
             </h1>
           </div>
