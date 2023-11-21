@@ -22,7 +22,7 @@ const Github = async () => {
       <section className="py-20 duration-700 dark:bg-black">
         <div className="max-w-[1400px] mx-auto">
           <div className=" px-[32px] flex  gap-10 mb-6 items-end ">
-            <div className="text-3xl font-semibold text-gray-800 dark:text-white ">
+            <div className="text-3xl font-semibold text-gray-800 underline-title dark:text-white ">
               Studies
             </div>
             <TheModal />
