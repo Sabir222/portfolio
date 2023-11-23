@@ -73,7 +73,9 @@ const Github = async () => {
                                       : "highlight"
                                   }`}
                                 >
-                                  {repo.language}
+                                  {repo.language === "C"
+                                    ? "C Language"
+                                    : repo.language}
                                 </span>
                               </div>
                             </div>

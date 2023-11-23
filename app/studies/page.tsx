@@ -87,9 +87,11 @@ const page = async () => {
                                       : repo.language === "C"
                                       ? "underline-c"
                                       : "highlight"
-                                  }`}
+                                  } ${repo.language ?? "underline-noLang"}`}
                                 >
-                                  {repo.language ?? "No language"}
+                                  {repo.language === "C"
+                                    ? "C Language"
+                                    : repo.language ?? "No language detected"}
                                 </span>
                               </div>
                             </div>

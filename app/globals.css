@@ -168,6 +168,12 @@ body {
   background-size: 100% 30%;
   background-repeat: no-repeat;
 }
+.underline-noLang {
+  background-image: linear-gradient(90deg, #557c55, #557c55);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+}
 .underline-title {
   background-image: linear-gradient(90deg, #8a2387, #e94057, #f27121);
   background-position: bottom;

@@ -26,7 +26,7 @@ const Header = ({ firstp, secondp, contact }: headerProps) => {
   }, []);
   return (
     <div
-      className={`h-[100vh] sm:h-[550px] p-6   flex justify-start md:justify-center items-center  relative gradient-background2 px-[32px]`}
+      className={`h-[100vh] sm:h-[550px] p-6 flex justify-start md:justify-center items-center  relative gradient-background2 px-[32px]`}
     >
       <div className="p-5 bg-slate-100/10  backdrop-blur-sm max-w-[1400px] md:rounded-xl ">
         <Image src={"/logo.png"} alt="logo" width={30} height={30} />
