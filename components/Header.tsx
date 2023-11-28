@@ -30,7 +30,7 @@ const Header = ({ firstp, secondp, contact }: headerProps) => {
     >
       <div className="p-5 bg-slate-100/10  backdrop-blur-sm max-w-[1400px] md:rounded-xl ">
         <Image src={"/logo.png"} alt="logo" width={30} height={30} />
-        <p className="mb-4 text-2xl font-bold text-white">{firstp}</p>
+        <p className="mb-4 font-bold text-white text-md">{firstp}</p>
         <p className="mb-3 text-gray-200">{secondp}</p>
         <Link href="/contact">
           <button
