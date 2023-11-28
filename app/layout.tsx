@@ -3,8 +3,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Providers from "./pproviders";
 import { Toaster } from "react-hot-toast";
+import { Roboto } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Sabir KOUTABI",
@@ -28,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Providers>
           {children}
           <Toaster position="bottom-right" />
