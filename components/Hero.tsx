@@ -12,6 +12,7 @@ const Hero = () => {
         />
       </div>
     </div>
+    
   );
 };
 
