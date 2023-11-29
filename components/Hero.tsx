@@ -12,7 +12,6 @@ const Hero = () => {
         />
       </div>
     </div>
-    
   );
 };
 
