@@ -25,7 +25,7 @@ const projects = [
     github: "https://github.com/Sabir222/Movie",
   },
 ];
-
+//
 const Projects = () => {
   return (
     <div className="dark:bg-[#EADBC8] bg-[#EEEEEE]">
