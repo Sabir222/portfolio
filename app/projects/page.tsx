@@ -1,14 +1,9 @@
 import Footer from "@/components/Footer";
-import Image from "next/image";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
-import RealEstate from "../../public/realestate.png";
-import MovieWebsite from "../../public/moviewebsite.png";
-import Crypto from "../../public/crypto.png";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import { AiOutlineGithub } from "react-icons/ai";
 import { Metadata } from "next";
-
+import ProjectCard from "@/components/ProjectCard";
+import projects from "@/projectsData";
 export const metadata: Metadata = {
   title: "Projects",
   description: "Sabir Koutabi's projects",
@@ -19,27 +14,6 @@ export const metadata: Metadata = {
     icon: "/favlogo.png",
   },
 };
-
-const projects = [
-  {
-    name: "Real Estate Website",
-    url: "https://real-estate-phi-three.vercel.app/",
-    src: RealEstate,
-    github: "https://github.com/Sabir222/real-estate",
-  },
-  {
-    name: "Crypto Tracker",
-    url: "https://crypto-tracker-2-six.vercel.app/",
-    src: Crypto,
-    github: "https://github.com/Sabir222/crypto-tracker",
-  },
-  {
-    name: "Movie App",
-    url: "https://movie-swart-five.vercel.app/",
-    src: MovieWebsite,
-    github: "https://github.com/Sabir222/Movie",
-  },
-];
 
 const page = () => {
   return (
@@ -61,41 +35,13 @@ const page = () => {
             <div className=" md:grid md:grid-cols-3 px-[32px]  gap-3 md:w-[100%]  ">
               {projects.map((project, key) => {
                 return (
-                  <div
-                    className="flex flex-col backdrop-blur-sm bg-opacity-70  gradient-background h-[400px] mb-8 md:mb-0  shadow-lg hover:shadow-zinc-700 ease-in-out duration-500 "
+                  <ProjectCard
                     key={key}
-                  >
-                    <div className="h-[15%] "></div>
-                    <div className="bg-black h-[65%] relative  ">
-                      <Image
-                        src={project.src}
-                        objectFit="cover"
-                        alt="img"
-                        layout="fill"
-                        placeholder="blur"
-                      />
-                    </div>
-                    <div className="h-[15%] text-white p-4 flex justify-between items-center md:text-[10px] lg:text-[16px]">
-                      <div>{project.name}</div>
-                      <div>
-                        <a href={project.github} target="_blank">
-                          <button className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4">
-                            <AiOutlineGithub className="text-white" />
-                          </button>
-                        </a>
-                      </div>
-                      <div className="">
-                        <a
-                          href={project.url}
-                          target="_blank"
-                          className="flex items-center gap-3"
-                        >
-                          <div>Visit</div>
-                          <HiOutlineArrowLongRight />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                    projectGithub={project.github}
+                    projectName={project.name}
+                    projectSrc={project.src}
+                    projectUrl={project.url}
+                  />
                 );
               })}
             </div>
