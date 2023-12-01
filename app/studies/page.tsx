@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Image from "next/image";
 import getRepos from "@/app/api/getRepos";
 import { DataProps } from "@/app/api/getRepos";
 import Navbar from "@/components/navbar/Navbar";
@@ -39,7 +38,6 @@ const page = async () => {
           <main className=" flex flex-col md:flex-row dark:text-white text-gray-800  px-[32px] ">
             <div className="grid-cols-1 gap-3 md:grid md:grid-cols-2 lg:grid-cols-3">
               {repos.map((repo: DataProps, index: any) => {
-                const shortenedCreatedAt = repo.created_at.slice(0, 10);
                 return (
                   <GithubCard
                     height="300px"

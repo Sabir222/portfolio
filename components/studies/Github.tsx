@@ -22,8 +22,7 @@ const Github = async () => {
           </div>
           <main className="flex flex-col text-gray-800 dark:text-white md:flex-row">
             <div className="md:w-[80%]  px-[32px]  md:grid grid-cols-1 md:grid-cols-2  gap-3 lg:grid-cols-3 ">
-              {filteredRepo.map((repo: DataProps, index: any) => {
-                const shortenedCreatedAt = repo.created_at.slice(0, 10);
+              {filteredRepo.map((repo: DataProps, index: number) => {
                 return (
                   <GithubCard
                     height="250px"
@@ -35,8 +34,8 @@ const Github = async () => {
                   />
                 );
               })}
-              <div className="flex gap-4 px-3 py-6">
-                <div className="h-full w-[10px] gradient-background"></div>
+              <div className="flex gap-4 px-3 py-6 lg:h-[250px]">
+                <div className="h-full w-[10px] gradient-background "></div>
                 <div className="flex flex-col justify-between">
                   <div className="mb-6 text-2xl font-semibold md:mb-0">
                     The only way to learn a new programming language is by
