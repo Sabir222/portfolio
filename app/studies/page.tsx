@@ -2,11 +2,11 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import getRepos from "@/app/api/getRepos";
 import { DataProps } from "@/app/api/getRepos";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/Footer";
 import TheModal from "@/components/StudyModal";
 import { Metadata } from "next";
-import GithubCard from "@/components/GithubCard";
+import GithubCard from "@/components/studies/GithubCard";
 
 export const metadata: Metadata = {
   title: "Studies",

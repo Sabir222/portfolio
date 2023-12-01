@@ -1,7 +1,7 @@
 import Link from "next/link";
 import getRepos from "@/app/api/getRepos";
 import { DataProps } from "@/app/api/getRepos";
-import TheModal from "./StudyModal";
+import TheModal from "../StudyModal";
 import GithubCard from "./GithubCard";
 const Github = async () => {
   const repos = await getRepos();

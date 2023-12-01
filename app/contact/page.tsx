@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact";
+import Navbar from "@/components/navbar/Navbar";
+import Contact from "@/components/contact/Contact";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
 

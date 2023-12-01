@@ -1,8 +1,8 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import { Metadata } from "next";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/project/ProjectCard";
 import projects from "@/projectsData";
 export const metadata: Metadata = {
   title: "Projects",

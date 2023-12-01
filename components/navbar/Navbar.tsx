@@ -1,10 +1,10 @@
 "use client";
 import { AiOutlineGithub, AiOutlineMenu } from "react-icons/ai";
-import MobileNav from "@/components/MobileNav";
+import MobileNav from "./MobileNav";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ThemeButton from "./ThemeButton";
+import ThemeButton from "../ThemeButton";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -42,7 +42,7 @@ const Navbar = () => {
                 <Image
                   src={"/logo2.png"}
                   alt="logo"
-                  width={1620}               
+                  width={1620}
                   height={1620}
                   style={{ width: 75, height: 75 }}
                 />
@@ -57,7 +57,7 @@ const Navbar = () => {
               <Link href="/studies" about="See my studies">
                 <li>Studies</li>
               </Link>
-              <Link href="/projects" about="Check out my projects" >
+              <Link href="/projects" about="Check out my projects">
                 <li>Projects</li>
               </Link>
               <Link href="/about" about="see more about me">
