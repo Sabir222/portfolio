@@ -34,7 +34,7 @@ const Github = async () => {
                   />
                 );
               })}
-              <div className="flex gap-4 px-3 py-6 lg:h-[250px]">
+              <div className="flex gap-4 px-3 py-6 ">
                 <div className="h-full w-[10px] gradient-background "></div>
                 <div className="flex flex-col justify-between">
                   <div className="mb-6 text-2xl font-semibold md:mb-0">
