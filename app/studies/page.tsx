@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `https://sabirkoutabi.dev/studies`,
   },
-  icons: {
-    icon: "/favlogo.png",
-  },
+  // icons: {
+  //   icon: "/favlogo.png",
+  // },
 };
 const page = async () => {
   const repos = await getRepos();

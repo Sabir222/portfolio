@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `https://sabirkoutabi.dev/contact`,
   },
-  icons: {
-    icon: "/favlogo.png",
-  },
+  // icons: {
+  //   icon: "/favlogo.png",
+  // },
 };
 const page = () => {
   return (
