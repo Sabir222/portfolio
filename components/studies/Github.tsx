@@ -37,7 +37,7 @@ const Github = async () => {
               <div className="flex h-[90%] gap-4 px-3 py-6">
                 <div className="h-full w-[10px] gradient-background "></div>
                 <div className="flex flex-col justify-between">
-                  <div className="mb-6 text-2xl font-semibold md:mb-0">
+                  <div className="mb-6 text-[21px] font-semibold md:mb-0">
                     The only way to learn a new programming language is by
                     writing programs in it.
                   </div>
