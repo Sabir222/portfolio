@@ -26,9 +26,9 @@ const GithubCard: React.FC<CardProps> = ({
   return (
     <div key={index}>
       <a href={repoUrl} target="_blank">
-        <div>
+        <div className={`h-[${height}]`}>
           <div
-            className={`dark:transparent cursor-pointer  mb-5 md:mb-0  h-[${height}] flex flex-col ring-gray-600  ring-1  shadow-md p-7`}
+            className={`dark:transparent cursor-pointer  mb-5 md:mb-0   flex flex-col ring-gray-600  ring-1  shadow-md p-7`}
           >
             <div className="h-[30%] flex align-center  gap-3">
               <div>
