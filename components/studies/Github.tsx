@@ -34,18 +34,17 @@ const Github = async () => {
                   />
                 );
               })}
-              <div>
-                <div className="flex gap-4 px-3 py-6 ">
-                  <div className="h-full w-[10px] gradient-background "></div>
-                  <div className="flex flex-col justify-between">
-                    <div className="mb-6 text-2xl font-semibold md:mb-0">
-                      The only way to learn a new programming language is by
-                      writing programs in it.
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      - <span className="text-gray-300">Dennis Ritchie,</span>{" "}
-                      &apos;Creator of the C programming language &apos;
-                    </div>
+
+              <div className="flex gap-4 px-3 py-6 ">
+                <div className="h-full w-[10px] gradient-background "></div>
+                <div className="flex flex-col justify-between">
+                  <div className="mb-6 text-2xl font-semibold md:mb-0">
+                    The only way to learn a new programming language is by
+                    writing programs in it.
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    - <span className="text-gray-300">Dennis Ritchie,</span>{" "}
+                    &apos;Creator of the C programming language &apos;
                   </div>
                 </div>
               </div>
