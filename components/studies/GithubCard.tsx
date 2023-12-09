@@ -65,10 +65,14 @@ const GithubCard: React.FC<CardProps> = ({
                           ? "underline-html"
                           : repoLang === "C"
                           ? "underline-c"
-                          : "highlight"
+                          : "underline-noLanguage"
                       }`}
                     >
-                      {repoLang === "C" ? "C Language" : repoLang}
+                      {repoLang === "C"
+                        ? "C Language"
+                        : repoLang === null
+                        ? "no language"
+                        : repoLang}
                     </span>
                   </div>
                 </div>
