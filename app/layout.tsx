@@ -13,8 +13,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Sabir KOUTABI",
-  description: "Sabir Koutabi's Portfolio",
+  title: "Sabir Koutabi - Front-End Developer | Portfolio",
+  description: "Explore Sabir Koutabi's portfolio and discover his projects, skills, and experiences.",
   alternates: {
     canonical: `https://sabirkoutabi.dev/`,
   },
