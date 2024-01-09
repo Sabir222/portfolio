@@ -42,8 +42,10 @@ const Navbar = () => {
                 <Image
                   src={"/logo2.png"}
                   alt="logo"
-                  width={1620}
-                  height={1620}
+                  loading="eager"
+                  fetchPriority="high"
+                  width={100}
+                  height={100}
                   style={{ width: 75, height: 75 }}
                 />
               </div>

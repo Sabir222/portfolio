@@ -35,7 +35,11 @@ const ProjectCard: React.FC<CardProps> = ({
         <div>{projectName}</div>
         <div>
           <a href={projectGithub} target="_blank">
-            <button className="flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4">
+            <button
+              className={`flex items-center justify-center w-8 h-8 rounded-full bg-zinc-100 bg-opacity-10 top-4 right-4 ${
+                projectGithub === undefined && "hidden"
+              }`}
+            >
               <AiOutlineGithub className="text-white" />
             </button>
           </a>

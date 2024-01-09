@@ -1,7 +1,14 @@
 import MovieWebsite from "./public/moviewebsite.png";
 import Crypto from "./public/crypto.png";
 import RealEstate from "./public/realestate.png";
+import Surf from "./public/surf.png";
 const projects = [
+  {
+    name: "Surf Lessons website",
+    url: "https://kitsurf.vercel.app/en",
+    src: Surf,
+    github: undefined,
+  },
   {
     name: "Real Estate Website",
     url: "https://real-estate-phi-three.vercel.app/",
