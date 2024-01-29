@@ -139,6 +139,9 @@ const CitySection: React.FC<CitySectionProps> = ({}) => {
             }
           >
             <Image
+              priority
+              placeholder="blur"
+              fetchPriority="high"
               src={image3}
               className="object-cover h-[550px]  md:h-[850px]  rounded-[2rem] relative "
               alt="essaouira picture"
