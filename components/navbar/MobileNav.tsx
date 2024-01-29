@@ -24,7 +24,12 @@ const MobileNav: React.FC<MobileNavProps> = ({ weatherData }) => {
   }, []);
 
   return (
-    <nav className="lg:hidden">
+    <motion.nav
+      className="lg:hidden"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 2, ease: "easeInOut" }}
+    >
       <motion.nav
         animate={{ height: expanded ? 400 : 100 }}
         transition={{ duration: 0.2, ease: "easeInOut" }}
@@ -118,7 +123,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ weatherData }) => {
           </div>
         </div>
       </motion.nav>
-    </nav>
+    </motion.nav>
   );
 };
 

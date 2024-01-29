@@ -1,7 +1,4 @@
-import Link from "next/link";
-
 type HomeAboutSectionProps = {};
-
 const HomeAboutSection: React.FC<HomeAboutSectionProps> = ({}) => {
   return (
     <div className="flex justify-center items-center text-lg container md:text-4xl  pt-20 pb-5 flex-col gap-4 ">

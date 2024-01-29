@@ -4,7 +4,6 @@ import image3 from "@/public/image3.jpg";
 import ReactAudioPlayer from "react-audio-player";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Pause, PlayCircle } from "lucide-react";
 
 type CitySectionProps = {};
 
