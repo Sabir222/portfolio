@@ -56,7 +56,10 @@ const CitySection: React.FC<CitySectionProps> = ({}) => {
   };
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 2, ease: "easeInOut" }}
       className={`${isHovered ? "" : "px-4 ease-in-out duration-500"} mb-20`}
     >
       <div className=" min-h-[100vh] md:min-h-[130vh]  flex-col overflow-hidden relative ">
@@ -140,6 +143,7 @@ const CitySection: React.FC<CitySectionProps> = ({}) => {
           >
             <Image
               priority
+              loading="eager"
               placeholder="blur"
               fetchPriority="high"
               src={image3}
@@ -159,7 +163,7 @@ const CitySection: React.FC<CitySectionProps> = ({}) => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

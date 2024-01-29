@@ -23,7 +23,7 @@ const Navbar: React.FC<NavbarProps> = ({ weatherData }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsVisible(true);
-    }, 450);
+    }, 2000);
     return () => clearTimeout(timeout);
   }, []);
 
