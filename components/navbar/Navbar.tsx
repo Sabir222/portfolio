@@ -1,94 +1,116 @@
 "use client";
-import { AiOutlineGithub, AiOutlineMenu } from "react-icons/ai";
-import MobileNav from "./MobileNav";
-import Image from "next/image";
 import Link from "next/link";
+import { ToggleMode } from "@/components/ToggleMode";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useEffect, useState } from "react";
-import ThemeButton from "../ThemeButton";
-const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+import { WeatherData } from "@/app/layout";
+import Time from "./Time";
+import {
+  Cloud,
+  CloudDrizzle,
+  CloudRainWind,
+  CloudSnow,
+  Haze,
+  Sun,
+} from "lucide-react";
+type NavbarProps = {
+  weatherData: WeatherData;
+};
+
+const Navbar: React.FC<NavbarProps> = ({ weatherData }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    document.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
+    const timeout = setTimeout(() => {
+      setIsVisible(true);
+    }, 450);
+    return () => clearTimeout(timeout);
   }, []);
-  const handleClick = () => {
-    setIsVisible((prevVisible) => !prevVisible);
-  };
+
+  let icon;
+
+  if (weatherData.weather[0].id.toString().startsWith("2")) {
+    icon = <CloudRainWind />;
+  } else if (weatherData.weather[0].id.toString().startsWith("3")) {
+    icon = <CloudDrizzle />;
+  } else if (weatherData.weather[0].id.toString().startsWith("4")) {
+    icon = <CloudRainWind />;
+  } else if (weatherData.weather[0].id.toString().startsWith("5")) {
+    icon = <CloudRainWind />;
+  } else if (weatherData.weather[0].id.toString().startsWith("6")) {
+    icon = <CloudSnow />;
+  } else if (weatherData.weather[0].id.toString().startsWith("7")) {
+    icon = <Haze />;
+  } else if (weatherData.weather[0].id === 800) {
+    icon = <Sun />;
+  } else if (weatherData.weather[0].id > 800) {
+    icon = <Cloud />;
+  }
 
   return (
-    <>
-      <MobileNav visible={isVisible} Click={handleClick} />
+    <section className="hidden lg:block">
       <nav
-        className={`  z-20 fixed  top-0 left-0 right-0 h-26   ${
-          scrolled ? "bg-black/40 backdrop-blur-sm " : "bg-transparent "
-        }  `}
+        className={`fixed w-full flex justify-between items-center h-20   px-5 z-40   transition-opacity ease-in-out duration-1000
+      ${isVisible ? "opacity-100" : "opacity-0"}  dark:bg-[black]  bg-[#f7f7f7]
+      `}
       >
-        <div className="max-w-[1400px] px-[32px] mx-auto items-center justify-between flex pt-2">
-          <div className="">
-            <Link href="/">
-              <div className="cursor-pointer top-4 left-4">
-                <Image
-                  src={"/logo2.png"}
-                  alt="logo"
-                  loading="eager"
-                  fetchPriority="high"
-                  width={100}
-                  height={100}
-                  style={{ width: 75, height: 75 }}
-                />
-              </div>
-            </Link>
+        <Link
+          className="flex items-center gap-3 transform duration-700"
+          href="/"
+        >
+          <Avatar className="">
+            <AvatarImage src="https://github.com/sabir222.png" />
+            <AvatarFallback>SK</AvatarFallback>
+          </Avatar>
+          <div className="flex flex-col">
+            <p className="hover:text-color1/45 dark:hover:text-white/45 transition duration-500">
+              Sabir Koutabi
+            </p>
+            <p className="text-color1/45 dark:text-white/45 dark:hover:text-white transition duration-500 hover:text-color1">
+              Front-End dev
+            </p>
+          </div>
+        </Link>
+        <div className="flex gap-6 items-center ">
+          <div>
+            <div className="hover:text-color1/45 dark:hover:text-white/45 transition duration-500 ">
+              {icon}
+            </div>
+            <div className="text-color1/45 dark:text-white/45 dark:hover:text-white transition duration-500 hover:text-color1 cursor-default">
+              {Math.floor(weatherData.main.temp - 273.15)}°C
+            </div>
           </div>
           <div>
-            <ul className="hidden gap-10 text-white md:flex">
-              <Link href="/">
-                <li>Home</li>
-              </Link>
-              <Link href="/studies" about="See my studies">
-                <li>Studies</li>
-              </Link>
-              <Link href="/projects" about="Check out my projects">
-                <li>Projects</li>
-              </Link>
-              <Link href="/about" about="see more about me">
-                <li>About</li>
-              </Link>
-              <Link href="/contact" about="Contact me for more information">
-                <li>Contact</li>
-              </Link>
-            </ul>
-          </div>
-          <div>
-            <div className="flex gap-2">
-              <ThemeButton />
-              <a href="https://github.com/Sabir222/portfolio" target="_blank">
-                <button className="flex items-center justify-center w-8 h-8 rounded-full gradient-background bg-opacity-10 top-4 right-4">
-                  <AiOutlineGithub className="text-white" />
-                </button>
-              </a>
-              <button
-                className="flex items-center justify-center w-8 h-8 rounded-full hover:gradient-background md:hidden bg-zinc-100 bg-opacity-10 top-4 right-4"
-                onClick={handleClick}
-              >
-                <AiOutlineMenu className="text-white" />
-              </button>
+            <Time />
+            <div className="text-color1/45 dark:text-white/45 dark:hover:text-white transition duration-500 hover:text-color1 cursor-default">
+              Essaouira,Morocco
             </div>
           </div>
         </div>
+        <div className="flex gap-4 items-center  ">
+          <ul className="flex gap-3 dark:text-white/45 dark:hover:text-white/15 text-color1/45">
+            <Link href="/work">
+              <li className="dark:hover:text-white duration-700 transition cursor-pointer hover:text-color1">
+                Work
+              </li>
+            </Link>
+            <Link href="/blog">
+              <li className="dark:hover:text-white duration-700 transition cursor-pointer hover:text-color1">
+                Blog
+              </li>
+            </Link>
+            <Link href="/contact">
+              <li className="dark:hover:text-white duration-700 transition cursor-pointer hover:text-color1">
+                Contact
+              </li>
+            </Link>
+          </ul>
+          <div className="h-10 w-10">
+            <ToggleMode />
+          </div>
+        </div>
       </nav>
-    </>
+    </section>
   );
 };
 

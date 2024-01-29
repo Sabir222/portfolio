@@ -2,181 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+/* default css ------> */
 * {
+  min-width: 0;
+  font: inherit;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
-  background-color: #fbfdfb;
+  margin: 0;
+  min-height: 100dvh;
 }
 
-/* Dark/light  theme */
-[data-theme="dark"] {
-  --background: black;
-  --foreground: white;
+h1,
+h2,
+h3,
+h4,
+h6,
+h5 {
+  text-wrap: balance;
 }
 
-/* Theme icon animation */
-.icon {
-  transition: transform 1.25s;
-}
-.icon:hover {
-  transform: rotate(360deg);
+p {
+  text-wrap: pretty;
 }
 
-/* Background animation*/
-.gradient-background {
-  background-image: linear-gradient(45deg, #8a2387, #e94057, #f27121);
-
-  background-size: 110%;
+video,
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
-.gradient-background2 {
-  background-image: linear-gradient(45deg, #020024, #07284b, #034c74, #00749b);
-  background-size: 600% 600%;
-  animation: bg-animation 35s infinite ease;
-}
+/*-----------------------------------------------*/
 
-@keyframes bg-animation {
-  0% {
-    background-position: 0% 50%;
+@layer base {
+  :root {
+    --background: 0 0% 97%;
+    --foreground: 0 0% 13%;
+    --card: 0 0% 97%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 97%;
+    --popover-foreground: 0 0% 13%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.75rem;
   }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 50%;
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
   }
 }
-
-/* scroll bar */
-@supports (scrollbar-color: #48494b #bebdb8) {
+@layer base {
   * {
-    scrollbar-color: #48494b #bebdb8;
-    scrollbar-width: thin;
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.5);
-  background: #bebdb8;
-}
-::-webkit-scrollbar-thumb {
-  background: #48494b;
-  border-radius: 100vw;
-  border: 1.7px solid #bebdb8;
-}
-
-/* skills gradient background */
-
-.gradient-background3 {
-  position: relative;
-  background-image: linear-gradient(
-    178.1deg,
-    rgb(60, 55, 106) 8.5%,
-    rgb(23, 20, 69) 82.4%
-  );
-  background-size: 600% 600%;
-}
-
-.gradient-background3Child {
-  height: 90%;
-  width: 80%;
-  background-color: #4d2454;
-  right: -40%;
-  top: -30%;
-  position: absolute;
-  border-radius: 100%;
-  animation: moveGradientBackground 15s infinite linear;
-}
-
-@keyframes moveGradientBackground {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(20%, 30%);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-.gradient-background3:after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  backdrop-filter: blur(80px);
-  z-index: 4;
-}
-
-.skills-container {
-  position: relative;
-  z-index: 6;
-}
-
-/* underline */
-
-.underline-python {
-  background-image: linear-gradient(90deg, #362fd9, #ffc436);
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}
-.underline-typescript {
-  background-image: linear-gradient(90deg, #362fd9, #362fd9);
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}
-.underline-c {
-  background-image: linear-gradient(90deg, #a9a9a9, #a9a9a9);
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}
-.underline-shell {
-  background-image: linear-gradient(90deg, #610c9f, #610c9f);
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}
-.underline-html {
-  background-image: linear-gradient(90deg, #ff6c22, #ff6c22);
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}
-.underline-noLanguage {
-  background-image: linear-gradient(90deg, #ff6c22, #ff6c22);
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}
-.underline-javascript {
-  background-image: linear-gradient(90deg, #ffc436, #ffc436);
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}
-.underline-noLang {
-  background-image: linear-gradient(90deg, #557c55, #557c55);
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}
-.underline-title {
-  background-image: linear-gradient(90deg, #8a2387, #e94057, #f27121);
-  background-position: bottom;
-  background-size: 100% 30%;
-  background-repeat: no-repeat;
-}

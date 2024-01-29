@@ -1,35 +1,21 @@
-import Header from "@/components/Header";
-import Navbar from "@/components/navbar/Navbar";
 import Contact from "@/components/contact/Contact";
-import Footer from "@/components/Footer";
 import { Metadata } from "next";
 
+type pageProps = {};
 export const metadata: Metadata = {
-  title: "Contact Sabir KOUTABI",
-  description: "Sabir Koutabi's contact page",
+  title: "Contact",
+  description: "Contact Sabir Koutabi",
   alternates: {
     canonical: `https://sabirkoutabi.dev/contact`,
   },
-  // icons: {
-  //   icon: "/favlogo.png",
-  // },
 };
-const page = () => {
+
+const Page: React.FC<pageProps> = ({}) => {
   return (
     <div>
-      <Navbar />
-      <div>
-        <Header firstp="Reach Out and Let's Chat!" contact="hidden" />
-        <div className="bg-slate-200 duration-300 dark:bg-black py-[100px] ">
-          <Contact />
-        </div>
-
-        <div className="">
-          <Footer />
-        </div>
-      </div>
+      <Contact />
     </div>
   );
 };
 
-export default page;
+export default Page;

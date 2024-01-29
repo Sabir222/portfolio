@@ -10,11 +10,11 @@ export default async function sitemap() {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/projects`,
+      url: `${baseUrl}/work`,
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/studies`,
+      url: `${baseUrl}/blog`,
       lastModified: new Date(),
     },
     {
