@@ -9,7 +9,7 @@ type ProjectsProps = {};
 const data = [
   {
     image: Kite,
-    url: "https://kitsurf.vercel.app/en",
+    url: "https://www.gokitesurfessaouira.com/en",
     stack: "Nextjs, Typescript, Tailwindcss, Nodemailer, Stripe",
     type: "Website",
     description:
