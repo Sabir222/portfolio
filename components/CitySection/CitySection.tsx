@@ -61,7 +61,7 @@ const CitySection: React.FC<CitySectionProps> = ({}) => {
       transition={{ delay: 2, ease: "easeInOut" }}
       className={`${isHovered ? "" : "px-4 ease-in-out duration-500"} mb-20`}
     >
-      <div className=" min-h-[100vh] md:min-h-[130vh]  flex-col overflow-hidden relative ">
+      <div className=" min-h-[125vh] md:min-h-[130vh]  flex-col overflow-hidden relative ">
         <h1 className="w-full text-4xl text-center my-20 opacity-70 dark:opacity-50 ">
           Where i live
         </h1>
